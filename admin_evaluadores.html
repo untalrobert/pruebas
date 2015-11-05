@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Administrador Jefe de Evaluadores</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.9/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/1.0.7/css/responsive.bootstrap.min.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+  
+
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <!-- <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul> -->
+      
+      <ul class="nav navbar-nav navbar-right">
+         
+        <li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-play-circle-o fa-fw"></i>Video Tutorial</a></li>
+         <li><a href="#" data-toggle="modal" data-target="#myModalVideo"><i class="fa fa-book fa-fw "></i>Manual De Uso</a></li>
+         <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment-o fa-fw"></i> Notificaciones
+                                    <span class="pull-right text-muted small">3 notificaciones</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>                 
+        
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-newspaper-o fa-fw"></i> Noticias 
+                                    <span class="pull-right text-muted small">4 Noticias</span>
+                                </div>
+                            </a>
+                        </li>
+                     
+                        
+                    </ul>
+                </li>
+        <li class="dropdown" style="    background-color: #5CB85C;">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Peter Parker<i class="fa fa-user fa-lg fa-fw"></i>  <i class="fa fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Perfil</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><i class="fa fa-times-circle-o fa-fw" style="color:#0077A8;"></i> Cerrar</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+         <div class="row">
+        
+          <div class="panel panel-primary" style="text-align:center; border:transparent;">
+
+          
+  <div class="btn-group btn-group-sm">
+  <button type="button" class="btn btn-success"><span class="fa fa-users fa-lg fa-fw"></span>&nbsp; Subir Evaluadores</button>
+  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Cargar Base Evaluadores</a></li>
+    <li><a href="#">Crear Evaluador</a></li>        
+  </ul>
+  </div>
+   
+<div class="btn-group btn-group-sm">
+  <button type="button" class="btn btn-success "><span class="fa fa-video-camera fa-lg fa-fw"></span>&nbsp; Videos Reportados</button>  
+</div>
+<div class="btn-group btn-group-sm">
+  <button type="button" class="btn btn-success"><span class="fa fa-bar-chart fa-lg fa-fw"></span>&nbsp; Estadísticas</button>
+  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Estadísticas</a></li>
+    <li><a href="#">Rendimiento por grupos o individuales</a></li>
+    <li><a href="#">Estadísticas Totales</a></li>
+    
+    
+  </ul>
+</div>
+</div>
+
+
+   
+    <div class="panel panel-primary">
+  <div class="panel-heading">Perfil Jefe Evaluadores</div>
+  <div class="panel-body">
+     <div class="row">
+         <div class="container-fluid">
+            
+    <button type="button" class="btn btn-default"  title="Exportar Tabla en PDF" style="
+    border: transparent;">
+        <span class="fa-stack fa-lg" title="Exportar Tabla en PDF">
+              <i class="fa fa-circle fa-stack-2x" style="color:#5CB85C"></i>
+              <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
+            </span>
+     
+    </button>
+           
+
+   <table id="example" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                 <th>Nombre</th>
+                <th>Canal</th>
+                <th>Videos Asignados</th>
+                <th>Grabaciones Incumplidas</th>
+                <th>Videos Reportados</th>
+                <th>Proceso Correctamente Finalizados</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+ 
+        <tbody>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                 <td >
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                 <td>
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+            </tr>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                 <td>
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+            </tr>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                 <td>
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+            </tr>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                 <td >
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+            </tr>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                 <td>
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+            </tr>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td>
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td >
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+            </tr>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td >
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+            </tr>
+            </tr>
+            <tr>
+               <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td >
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                   <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+            </tr>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td>
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+            </tr>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td>
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td>
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+            </tr>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td>
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+            </tr>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+            </tr>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                   <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+            </tr>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+            </tr>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <a href="editar_per_camarografo.html"><button  type="button" class="btn btn-success  btn-xs">Editar</button></a>
+            </tr>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Editar</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Editar</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Editar</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Editar</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Editar</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Editar</button>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Editar</button>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Editar</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Editar</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Editar</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Editar</button>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Editar</button>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Editar</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Editar</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Editar</button>
+            </tr>
+            <tr>
+               <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Editar</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+            <tr>
+                <td>Robespierre Lugo</td>
+                <td>cine Canal</td>
+                <td>50</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td style="width: 88px;">
+                    <a href="ver_camarografos.html"><button  type="button" class="btn btn-primary  btn-xs">Ver</button></a>
+                    <button  type="button" class="btn btn-success  btn-xs">Edit</button>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+</div>
+    
+  </div>
+</div>
+
+
+   
+</div>
+    </div>
+    <!-- /.container -->
+
+
+  
+  <div id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3">
+          <p class="copyright"><span class="fa-stack fa-lg ">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-phone fa-stack-1x fa-inverse-footer"></i>
+          </span>&nbsp; Contacto: (571) 6910329</p>
+      </div>
+    </div>    
+  </div>  
+  </div>
+
+
+ <!-- MODAL AYUDA PANEL LATERAL -->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col-xs-12">
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Video Ayuda</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-12">
+
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/84Mzvag53BI" frameborder="0" allowfullscreen></iframe>
+                  </div>
+
+                  <div class="modal-footer" style="padding:0px; border:none;">                   
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                  </div>
+
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Video que subio el camarografo</h4>
+      </div>
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AJcrnb8MlGc"></iframe>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar Ventana</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+ <!-- Ventana Modal Manual de Uso  -->
+<div class="modal fade" id="myModalVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Manual de Uso</h4>
+      </div>
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="http://docs.google.com/gview?url=http://victorpimentel.com/stuff/rubik.pdf&amp;embedded=true"></iframe>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+     <script type="text/javascript" src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/1.10.9/js/dataTables.bootstrap.min.js"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/responsive/1.0.7/js/dataTables.responsive.min.js"></script>
+      <script type="text/javascript"><script type="text/javascript">$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})</script></script>
+    <script type="text/javascript">
+     $(document).ready(function() {
+    $('#example').DataTable();
+} );
+    </script>
+
+
+</body>
+</html>

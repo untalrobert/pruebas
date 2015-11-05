@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tipo de Usuario</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+  
+
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="img/logo_landing.png" alt=""></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
+      <ul class="nav navbar-nav navbar-right"> 
+        <li><a href="#" data-toggle="modal" data-target="#myModalVideo"><i class="fa fa-book fa-fw "></i>Manual De Uso</a></li>
+              
+        <li class="dropdown" style="background-color: #FFCF00">
+          <a href="tipo_usuario.html" class="dropdown-toggle"  role="button"  aria-expanded="false" style="font-weight: 800;">Tipo de usuario</a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div id="header-2">
+<div class="container">
+ <div class="row"> 
+    <div class="col-xs-6">
+      <div class=>
+        <h1>Bienvenido</h1>
+          <h1>Plataforma de la Evaluación de Carácter Diagnóstico Formativa</h1>
+          <h2 style="font-size: 16px;" class="subtitle">Si es la primera vez que ingresa a la plataforma, por favor haga clic en “Registro” </h2>
+          <a href="registro_camarografo.html"><button style="float:left; font-size:13px;" type="button" class="btn btn-success btn-xs">Registro</button></a>
+        
+          <h2 style="font-size: 19 px; margin-top: 45px;" class="subtitle">De lo contrario, ingrese a la plataforma diligenciando la información que se solicita a continuación.</h2>
+          </div>
+          <div class="panel-body" style="padding-top: 0px;">
+    <form role="form" class="new_persona" id="new_persona" action="/personas/sign_in" accept-charset="UTF-8" method="post" _lpchecked="1"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token">
+      <div class="form-group">
+         <div class="form-group">
+        <label style="color: #fff;" for="persona_tipo_documento_id">Tipo Documento</label>
+        <select name="persona[tipo_documento_id]" id="persona_tipo_documento_id" style="margin-left:12px;">
+          <option value="2">Cédula de ciudadanía</option>
+          <option value="3">Cédula de extranjería</option>
+          <option value="5">Pasaporte</option></select>
+      </div>
+        <label style="color: #fff;" for="persona_documento">Número de Documento</label>
+        <input autofocus="autofocus" class="form-control" type="text" value="Ej. 80186850" name="persona[documento]" id="persona_documento" autocomplete="off" >
+      </div>
+    
+      <div class="form-group">
+        <label style="color: #fff;" for="persona_password">Contraseña</label>
+        <input autocomplete="off" class="form-control" type="password" value="Ej. 12345" name="persona[password]" id="persona_password" >
+      </div>
+        <div class="checkbox">
+          <label>
+            <input name="persona[remember_me]" type="hidden" value="0"><input type="checkbox" value="1" name="persona[remember_me]" id="persona_remember_me">
+            <label style="color: #fff; margin-left: 0px; margin-top: 0px; padding-left: 7px; margin-bottom: 20px;" for="persona_remember_me">Guarda contraseña</label>
+          </label>
+           <a href="#"><button style="float:right; font-size:16px;" type="button" class="btn btn-success btn-xs">Recordar Contraseña</button></a>
+        </div>
+      <a href="#"><button style="font-size:16px;" type="button" class="btn btn-success btn-sm">Ingresar</button></a>
+   
+          </div>        
+        </div>
+
+  <div class="col-xs-6">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="
+    width: 100%; text-align:center;">
+                  
+            <!-- slides -->
+            <div class="carousel-inner">
+            <div class="item active">
+              <div class="video-container">
+                <h2 style="color:#fff;">Ayuda de Uso Plataforma</h2>
+                <iframe width="400px" height="300px" src="https://www.youtube.com/embed/efS_KSDqiAg" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>            
+            </div>
+          </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="footer" style="padding: 37px 0 5px;">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-sm-3" style="text-align: -webkit-center;">
+          <p>
+          <img class="img-responsive" style="width:65%;margin-top: -22px;" src="img/logo_01.png" alt=""></p>
+        </div>
+        <div class="col-xs-6 col-sm-3"style="text-align: -webkit-center;">
+          <p>
+          <img class="img-responsive" style="width:50%;margin-top: -12px;"src="img/icfes.png" alt=""></p>
+        </div>
+        <div class="col-xs-6 col-sm-3" style="text-align: -webkit-center;">
+          <p>
+          <img class="img-responsive" style="width:50%;margin-top: -15px;"src="img/aprende.png" alt=""></p>
+        </div>
+        <div class="col-xs-6 col-sm-3"style="text-align: -webkit-center; margin-top: -12px;">
+         <p style="margin-bottom: 0px; font-size:13px;" class="copyright"> Contacto: (571) 6910329 </p>
+          <p style="font-size:13px;"class="copyright">Contactomaestro2025@icfes.gov.co</p>
+        </div>
+        </div>
+      </div>
+      
+  </div> 
+
+
+
+   <!-- MODAL AYUDA PANEL LATERAL -->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col-xs-12">
+
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Video Ayuda</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-12">
+
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/84Mzvag53BI" frameborder="0" allowfullscreen></iframe>
+                  </div>
+
+                  <div class="modal-footer" style="padding:0px; border:none;">                   
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                  </div>
+
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   <!-- Ventana Modal Manual de Uso  -->
+<div class="modal fade" id="myModalVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Manual de Uso</h4>
+      </div>
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="http://docs.google.com/gview?url=http://victorpimentel.com/stuff/rubik.pdf&amp;embedded=true"></iframe>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
