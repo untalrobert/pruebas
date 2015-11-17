@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Panel Par evaluador</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+  
+
+     <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="img/logo_landing.png" alt=""></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-play-circle-o fa-fw"></i>Video Tutorial</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModalVideo"><i class="fa fa-book fa-fw "></i>Manual De Uso</a></li>
+        <!-- /.dropdown-alerts -->
+         <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="notificaciones.html">
+                                <div>
+                                    <i class="fa fa-comment-o fa-fw"></i> Notificaciones
+                                    <span class="pull-right text-muted small">3 notificaciones</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>                 
+        
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-newspaper-o fa-fw"></i> Noticias 
+                                    <span class="pull-right text-muted small">4 Noticias</span>
+                                </div>
+                            </a>
+                        </li>
+                     
+                        
+                    </ul>                    
+                </li>
+                <!-- /.dropdown-alerts -->
+       <li class="dropdown" style="background-color: #FFCF00">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="font-weight: 800;">Peter Parker<i class="fa fa-user fa-lg fa-fw"></i>  <i class="fa fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Perfil</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><i class="fa fa-times-circle-o fa-fw" style="color:#0077A8;"></i>Cerrar</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+          <div class="panel panel-primary" >
+  <div class="panel-heading">Video a Evaluar</div>
+  <div class="panel-body">
+<table >
+   <div class="embed-responsive embed-responsive-16by9">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1QG2RMApZN4" frameborder="0" allowfullscreen></iframe>
+    </div>    
+       <button style="margin-top: 6px; float: right;" data-toggle="modal" data-target="#modalConfirmacionPar"type="button" class="btn btn-success btn-xs">Reportar Video</button>
+    
+  
+      </table>
+    
+  </div>
+</div>
+</div>
+
+<div class="col-md-6">
+          <div class="panel panel-primary">
+  <div class="panel-heading">Tabla de Correción</div>
+  <div class="panel-body">
+    <table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+           <!--  <th style="padding-right: 0px;padding-left: 0px; border-left-width: 0px; border-right-width: 0px; width: 100px;">Selección</th> -->
+            <th></th>
+            
+        </tr>
+    </thead>
+    <tbody>
+       
+        <tr>
+            <td>
+            
+
+              </td>  
+        </tr>
+        
+    </tbody>
+     <tbody>
+       
+        <tr>
+          
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+
+
+<table class="table table-bordered table-hover">  
+
+     <tbody>       
+        <tr>
+            <td><button style="margin-top: 6px; float: center;" data-toggle="modal" data-target="#myModalEntregarEvalu"type="button" class="btn btn-success btn-xs">Entregar Evaluación</button></td>
+            
+           
+            </tr>        
+          </tbody>
+      </table>
+    
+    
+  </div>
+</div>
+</div>  
+
+   
+</div>
+    </div>
+    <!-- /.container -->
+  
+<div id="footer" style="padding: 37px 0 5px;">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-sm-3" style="text-align: -webkit-center;">
+          <p>
+          <img class="img-responsive" style="width:65%;margin-top: -22px;" src="img/logo_01.png" alt=""></p>
+        </div>
+        <div class="col-xs-6 col-sm-3"style="text-align: -webkit-center;">
+          <p>
+          <img class="img-responsive" style="width:50%;margin-top: -12px;"src="img/icfes.png" alt=""></p>
+        </div>
+        <div class="col-xs-6 col-sm-3" style="text-align: -webkit-center;">
+          <p>
+          <img class="img-responsive" style="width:50%;margin-top: -15px;"src="img/aprende.png" alt=""></p>
+        </div>
+        <div class="col-xs-6 col-sm-3"style="text-align: -webkit-center; margin-top: -12px;">
+         <p style="margin-bottom: 0px; font-size:13px;" class="copyright"> Contacto: (571) 6067125 </p>
+          <p style="font-size:13px;"class="copyright">Contactomaestro2025@icfes.gov.co</p>
+        </div>
+        </div>
+      </div>
+      
+  </div> 
+
+
+ <!-- MODAL AYUDA PANEL LATERAL -->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col-xs-12">
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Video Ayuda</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-12">
+
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/84Mzvag53BI" frameborder="0" allowfullscreen></iframe>
+                  </div>
+
+                  <div class="modal-footer" style="padding:0px; border:none;">                   
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                  </div>
+
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+
+
+        </div>
+        
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<!-- Ventana Modal Manual de Uso  -->
+<div class="modal fade" id="myModalVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Manual de Uso</h4>
+      </div>
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="http://docs.google.com/gview?url=http://victorpimentel.com/stuff/rubik.pdf&amp;embedded=true"></iframe>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 style="color: #fff; text-align: -webkit-left; font-size: 12px;" class="modal-title" id="myModalLabel">Cedula: 80186850</h4>
+        <h5 style="color: #fff;" class="modal-title text-align:left;" id="myModalLabel">VíDEO CARGADO</h5>
+      </div>
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J7EBm3Ra-es"></iframe>
+        </div>
+      </div>
+      <div class="modal-footer" style="background-color: #EAF785">
+        <div class="row">
+  <div class="col-xs-6 col-sm-4">
+    <h5>Este es el video de la clase qué desea se evalúe?</h5>
+  </div>
+  <div class="col-xs-6 col-sm-4"><label>
+         <input type="radio" />
+         <span class="lbl padding-12">SI</span>
+      </label>
+       
+      <!-- Radio Button -->
+      <label>
+         <input type="radio" />
+         <span class="lbl padding-12">NO</span>
+      </label>
+    </div>
+  <div class="col-xs-6 col-sm-4">
+    <button type="button" class="btn btn-success btn-sm">Validar</button>
+  </div>
+</div>
+        
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- FORMULARIO CONFIRMACION ENVIO VIDEO -->
+<div class="modal fade" id="modalConfirmacionPar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Formulario de confirmación</h4>
+      </div>
+      <div class="modal-body ">
+        <div class="row">
+          <div class="col-xs-12">
+            <h4 style="text-align: -webkit-center;margin-bottom: 22px;">Antes de terminar el proceso de envío  por favor indique:</h4>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> La calidad del sonido no permite entender con claridad el desarrollo de la clase.
+                </label>     
+                <!-- Radio Button -->                
+            </li>
+              <li class="list-group-item">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1">La imagen del video no es clara e impide visualizar con claridad el desarrollo de la clase.
+                </label>     
+                <!-- Radio Button -->
+              </li>
+              <li class="list-group-item">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> El video se encuentra cortado o no es continuo.
+                </label>
+              </li>             
+            </ul>                       
+          </div>          
+        </div>  
+       
+        
+      <div class="modal-footer" >
+        <div class="row">  
+          <div class="col-xs-12 cerrarVentana">
+              <button  type="button" class="btn btn-success" data-dismiss="modal">Enviar Reporte</button>
+          </div>
+        </div>
+      </div>       
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN FORMULARIO CONFIRMACION ENVIO VIDEO -->
+
+
+<!--  MODAL ENTREAGAR EVALUACION -->
+
+      <div class="modal fade" id="myModalEntregarEvalu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 style="color: #fff;" class="modal-title text-align:left;" id="myModalLabel">Enviar Evaluación</h4>
+            </div>
+            <div class="modal-body evaluacion">
+             <h4>Está seguro que quiere entregar la evaluación</h4>
+             <p>Este Resultado será el final. Usted no podrá volver a evaluar este video</p>
+            </div>
+           <div class="modal-footer">
+              <div class="row">
+        <div class="col-xs-12 ">
+         <a href="par_evaluador.html"><button  type="button" class="btn btn-success">Confirmar Entrega</button></a>
+            <button style="margin-right: 30px;" type="button" class="btn btn-success" data-dismiss="modal">Volver a Evaluación</button>
+        </div>
+      </div>  
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FINAL MODAL ENTREGAR EVALUACION -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+<script type="text/javascript">
+    $('#modalError').modal({
+      keyboard: false
+    })
+
+    </script>
+    
+</body>
+
+</html>

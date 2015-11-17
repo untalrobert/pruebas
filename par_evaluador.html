@@ -10,7 +10,7 @@
       <link rel="shortcut icon" href="img/favicon.ico">
 
 
-    <title>Camárografo</title>
+    <title>Par Evaluador</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -26,9 +26,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
-
 <body>
   
 
@@ -67,120 +65,92 @@
 
     <!-- Page Content -->
     <div class="container">
-         <div class="row">
-        
+         <div class="row">        
           <div class="panel panel-primary">
-  <div class="panel-heading">ASIGNACIÓN DE VIDEOS</div>
+  <div class="panel-heading">VIDEOS</div>
   <div class="panel-body">
-    <h4 style="font-size: 19px; text-align: -webkit-center; margin-top: -8px; padding-bottom: 12px; padding-top: 14px;">En caso de que esta lista no corresponda con sus registros, por favor comuníquese inmediatamente con  el productor encargado de su canal.</h4>
-    <div class="table-responsive">
- 
+    <ul  style="text-align: -webkit-left; margin-top: 0px; padding-bottom: 12px; padding-top: 2px;background: #FDEDA6;">
+    <h4 style="font-size: 16px; text-align: -webkit-center; margin-top: -8px; padding-bottom: 2px; padding-top: 14px;">Instrucciones para Evaluar</h4>   
+      <li>Una vez que entres a evaluar, no pofrás evaluar otro video</li>
+      <li>Recuerda que tu desempeño será evaluado</li>
+      </ul>
+      
 
-
-     <table class="table table-bordered table-hover">
-    <thead>
-        <tr> 
-          
-          <th>ID evaluado</th>
-          <th>Municipio</th>
-          <th>Departamento</th>
-          <th>Institución Educativa</th> 
-          <th>Fecha cargue</th>                   
-          
-            <th>Estado de cargue</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>            
-            <td>80186850</td>
-            <td>Abejorral</td>
-             <td>Antioquia</td>
-             <td>Francisco jose de Caldas</td>
-             <td>25-12-2015</td>
-           
-            <td>
-               <div class="progress progress-striped">
-                    <div class="progress-bar progress-bar-success" role="progressbar"
-                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                       style="width: 40%">
-                    <span class="sr-only">40% completado (éxito)</span>
-                    </div>
-                  </div>
-              
-            </td>
-           <td style="width: 228px;">
-              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
-                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
-                  
-                </div>
-
-                  
-
-                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
-                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
-                  
-                </div>
-                
-                 <div  style="position:relative;float:right; width:70px">
-                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
-                  
-                </div>
+      <div class="table-responsive" style="height:200px;">
+        <table class="table table-bordered  table-hover">
+          <thead>
+            <tr>
+              <th>Especificaciones del video</th>
+              <th style="width: 110px;">Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+              <td>1</td>
+              <td>
+                <button data-toggle="modal" data-target="#myModalEvaluar" type="button " class="btn btn-success btn-sm">Evaluar</button>
+              </td>              
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <button type="button " class="btn btn-success btn-sm">Evaluar</button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <button type="button " class="btn btn-success btn-sm">Evaluar</button>
+              </td>              
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>
+                <button type="button " class="btn btn-success btn-sm">Evaluar</button>
+              </td>              
+            </tr>
+            <tr class="success">
+              <td>5</td>
+              <td>
+                <button type="button " class="btn btn-success btn-sm">Evaluar</button>
+              </td>              
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>
+                <button type="button " class="btn btn-success btn-sm">Evaluar</button>
+              </td>            
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>
+                <button type="button " class="btn btn-success btn-sm">Evaluar</button>
               </td>             
-            </td>
-        </tr>
+            </tr>
+             <tr>
+              <td>8</td>
+              <td><button type="button " class="btn btn-success btn-sm">Evaluar</button></td>             
+             </tr>
+            <tr>
+              <td>9</td>
+              <td><button type="button " class="btn btn-success btn-sm">Evaluar</button></td>          
+            </tr>
+            <tr>
+              <td>10</td>
+              <td><button type="button " class="btn btn-success btn-sm">Evaluar</button></td>            
+            </tr>
           </tbody>
-
-           <tbody>
-        <tr>            
-            <td>17636488</td>
-            <td>Abejorral</td>
-             <td>Antioquia</td>
-             <td>Francisco jose de Caldas</td>
-             <td>25-12-2015</td>
-           
-            <td>
-               <div class="progress progress-striped">
-                    <div class="progress-bar progress-bar-success" role="progressbar"
-                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                       style="width: 40%">
-                    <span class="sr-only">40% completado (éxito)</span>
-                    </div>
-                  </div>
-              
-            </td>
-           <td style="width: 228px;">
-              <div data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
-                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Envíar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
-                  
-                </div>
-
-                  
-
-                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
-                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver" ><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
-                  
-                </div>
-                
-                   <div  style="position:relative;float:right; width:70px">
-                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc" ><i class="fa fa-video-camera" style="color:#fff;"></i>
-                  
-                </div>
-              </td>             
-            </td>
-        </tr>
-          </tbody>
-       </table>
-       </div>   
+        </table>   
+      </div>
+      <div class="col-md-12 text-center">
+        <ul class="pagination pagination-sm pager" id="myPager">        
+        </ul>
+      </div>    
      </div>
-  </div>
-
-   
+  </div>  
 </div>
     </div>
     <!-- /.container -->
-
-
   
   <div id="footer" style="padding: 37px 0 5px;">
   <div class="container">
@@ -202,8 +172,7 @@
           <p style="font-size:13px;"class="copyright">Contactomaestro2025@icfes.gov.co</p>
         </div>
         </div>
-      </div>
-      
+      </div>      
   </div> 
 
 
@@ -213,7 +182,6 @@
     <div class="modal-content">
       <div class="row">
         <div class="col-xs-12">
-
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Video Ayuda</h3>
@@ -221,17 +189,13 @@
             <div class="panel-body">
               <div class="row">
                 <div class="col-xs-12">
-
                   <div class="embed-responsive embed-responsive-16by9">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/84Mzvag53BI" frameborder="0" allowfullscreen></iframe>
                   </div>
-
                   <div class="modal-footer" style="padding:0px; border:none;">                   
                     <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
                   </div>
-
-                </div>
-                
+                </div>                
               </div>
             </div>
           </div>
@@ -265,41 +229,35 @@
   <div class="col-xs-6 ">
     <button style="margin-top: 18px;" type="button" class="btn btn-success btn-sm">Validar</button>
   </div>
-</div>
-        
-        
+</div>       
       </div>
     </div>
   </div>
 </div>
 
-<!-- confirmar envio de video -->
-
-<div class="modal fade" id="myModalConf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 style="color: #fff;" class="modal-title text-align:left;" id="myModalLabel">CONFIRMAR ENVÍO</h4>
-      </div>
-      <div class="modal-body">
-        <p>Este video será asignado al docente identificado con documento “Número ID”. Para confirmar la asignación del video, seleccione Enviar.</p>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J7EBm3Ra-es"></iframe>
+<!--  MODAL CONFIRMAR EVALUACION -->
+      <div class="modal fade" id="myModalEvaluar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 style="color: #fff;" class="modal-title text-align:left;" id="myModalLabel">Confirmar ingreso a Evaluar</h4>
+            </div>
+            <div class="modal-body evaluacion">
+             <h4>Estas seguro que quieres comenzar?</h4>
+             <p>Recuerda que tu desempeño será evaluado</p>
+            </div>
+           <div class="modal-footer">
+              <div class="row">
+        <div class="col-xs-12 ">
+          <a href="evaluar_video.html"><button style="margin-top: 0px;" type="button" class="btn btn-success btn-sm">Evaluar</button></a>
         </div>
-      </div>
-     <div class="modal-footer">
-        <div class="row">
-  <div class="col-xs-12 ">
-    <button style="margin-top: 0px;" type="button" class="btn btn-success btn-sm">Enviar</button>
-  </div>
-</div>
-        
-        
+      </div>        
       </div>
     </div>
   </div>
 </div>
+<!-- FINAL MODAL CONFIRMAR EVALUACION -->
 
 
  <!-- Ventana Modal Manual de Uso  -->
@@ -326,7 +284,6 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -334,6 +291,114 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
 });
 </script>
+
+  <script >$.fn.pageMe = function(opts){
+    var $this = this,
+        defaults = {
+            perPage: 7,
+            showPrevNext: false,
+            hidePageNumbers: false
+        },
+        settings = $.extend(defaults, opts);
+    
+    var listElement = $this;
+    var perPage = settings.perPage; 
+    var children = listElement.children();
+    var pager = $('.pager');
+    
+    if (typeof settings.childSelector!="undefined") {
+        children = listElement.find(settings.childSelector);
+    }
+    
+    if (typeof settings.pagerSelector!="undefined") {
+        pager = $(settings.pagerSelector);
+    }
+    
+    var numItems = children.size();
+    var numPages = Math.ceil(numItems/perPage);
+
+    pager.data("curr",0);
+    
+    if (settings.showPrevNext){
+        $('<li><a href="#" class="prev_link">«</a></li>').appendTo(pager);
+    }
+    
+    var curr = 0;
+    while(numPages > curr && (settings.hidePageNumbers==false)){
+        $('<li><a href="#" class="page_link">'+(curr+1)+'</a></li>').appendTo(pager);
+        curr++;
+    }
+    
+    if (settings.showPrevNext){
+        $('<li><a href="#" class="next_link">»</a></li>').appendTo(pager);
+    }
+    
+    pager.find('.page_link:first').addClass('active');
+    pager.find('.prev_link').hide();
+    if (numPages<=1) {
+        pager.find('.next_link').hide();
+    }
+    pager.children().eq(1).addClass("active");
+    
+    children.hide();
+    children.slice(0, perPage).show();
+    
+    pager.find('li .page_link').click(function(){
+        var clickedPage = $(this).html().valueOf()-1;
+        goTo(clickedPage,perPage);
+        return false;
+    });
+    pager.find('li .prev_link').click(function(){
+        previous();
+        return false;
+    });
+    pager.find('li .next_link').click(function(){
+        next();
+        return false;
+    });
+    
+    function previous(){
+        var goToPage = parseInt(pager.data("curr")) - 1;
+        goTo(goToPage);
+    }
+     
+    function next(){
+        goToPage = parseInt(pager.data("curr")) + 1;
+        goTo(goToPage);
+    }
+    
+    function goTo(page){
+        var startAt = page * perPage,
+            endOn = startAt + perPage;
+        
+        children.css('display','none').slice(startAt, endOn).show();
+        
+        if (page>=1) {
+            pager.find('.prev_link').show();
+        }
+        else {
+            pager.find('.prev_link').hide();
+        }
+        
+        if (page<(numPages-1)) {
+            pager.find('.next_link').show();
+        }
+        else {
+            pager.find('.next_link').hide();
+        }
+        
+        pager.data("curr",page);
+        pager.children().removeClass("active");
+        pager.children().eq(page+1).addClass("active");
+    
+    }
+};
+
+$(document).ready(function(){
+    
+  $('#myTable').pageMe({pagerSelector:'#myPager',showPrevNext:true,hidePageNumbers:false,perPage:4});
+    
+});</script>
 
 </body>
 </html>

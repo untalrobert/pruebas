@@ -11,7 +11,7 @@
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
   margin-left: 25px;
 }
-.navbar-default{
+.navfbar-default{
   background-color: #fff;
   border-radius: 0px;
   border-bottom:1px solid #60ADDF;
@@ -22,6 +22,7 @@
 .navbar-default .navbar-nav>li>a{
   color: #fff;
 }
+
 
 .navbar-default .navbar-nav>li>a:hover{
   color: #fff;
@@ -109,6 +110,57 @@
   color: #fff;
 }
 
+.popover-title{
+  background: #337AB7;
+  color: #fff;
+  text-align: center;
+}
+.popover.bottom>.arrow:after{
+  border-bottom-color: #337AB7;
+}
+.popover-content{
+  text-align: justify;
+
+}
+
+
+.btn-default:hover{
+  background: #5CB85C;
+  border-color: #5CB85C;
+  color: #fff;
+
+}
+
+.btn-info{
+  background: #00AFE4;
+}
+
+.btn-circle{
+  background: #5CB854;
+  border-radius: 30px;
+}
+
+.doc{
+  background: #00AFE4;
+  border-radius: 30px;
+}
+.doc:hover{
+  background: #00AFE4;
+  border-radius: 30px;
+  border: none;
+}
+
+.ver{
+  background: #FFCF00;
+  border-radius: 30px;
+  border:none;
+}
+.ver:hover{
+  background: #FFCF00;
+  border-radius: 30px;
+  border:none;
+}
+
 
 
 /* footer */
@@ -141,9 +193,22 @@ p.copyright {
     text-align: center;    
 }
 
+.modal-title{
+  color: #fff;
+}
+.cerrarVentana button{
+  float: right;
+  padding: 2px 12px;
+}
+
+.alertas{
+  margin-bottom: 0px;
+}
+
 a:focus{
   outline: 0px;
 }
+
 
 /** 2 level sub menu **/
 .dropdown-menu-with-subs .sub-menu {
@@ -216,6 +281,10 @@ thead tr{
 
 
 
+.adjuntarVideo{
+  margin-top: 90px;
+  margin-bottom: 60px;
+}
 /*List Group */
 
 
@@ -259,6 +328,7 @@ input[readonly] {
   border-color: #337AB7;
 }
 
+
 .modal-header{
   background-color: #337AB7;
   color: #fff;
@@ -269,7 +339,23 @@ input[readonly] {
   margin-top: 3px;
 }
 
+#myModalEvaluar h4 {
+  text-align: center;
+}
+#myModalEvaluar p {
+  text-align: center;
 
+}
+
+#myModalEntregarEvalu h4{
+  text-align: center;
+
+}
+#myModalEntregarEvalu p{
+  text-align: center;
+  background: #F5D3D3;
+
+}
 .col-xs-6 .col-sm-4, label{
   margin-right: 12px;
   margin-left: 12px;
@@ -542,6 +628,13 @@ h2.subtitle {
 
 /* end video */
 
+
+
+.instrucciones p{
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
 
 /* footer */
 #footer {

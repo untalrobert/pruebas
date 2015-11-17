@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Tipo de Usuario</title>
+    <title>Adjuntar Video</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -27,6 +27,7 @@
     <![endif]-->
 
 </head>
+
 <body>
   
 
@@ -45,80 +46,88 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
-      <ul class="nav navbar-nav navbar-right"> 
-        <li><a href="#" data-toggle="modal" data-target="#myModalVideo"><i class="fa fa-book fa-fw "></i>Manual De Uso</a></li>
+      <ul class="nav navbar-nav navbar-right">       
+         
+        <li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-play-circle-o fa-fw"></i>Video Tutorial</a></li>
+        <li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-book fa-fw "></i>Manual De Uso </a></li>          
+                </li>
+                 <!-- /.dropdown-alerts -->
+         <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment-o fa-fw"></i> Notificaciones
+                                    <span class="pull-right text-muted small">3 notificaciones</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>                 
+        
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-newspaper-o fa-fw"></i> Noticias 
+                                    <span class="pull-right text-muted small">4 Noticias</span>
+                                </div>
+                            </a>
+                        </li>
+                     
+                        
+                    </ul>
+                </li>
+                 <!-- /.dropdown-alerts -->
               
         <li class="dropdown" style="background-color: #FFCF00">
-          <a href="tipo_usuario.html" class="dropdown-toggle"  role="button"  aria-expanded="false" style="font-weight: 800;">Tipo de usuario</a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Peter Parker<i class="fa fa-user fa-lg fa-fw"></i>  <i class="fa fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Perfil</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><i class="fa fa-times-circle-o fa-fw" style="color:#0077A8;"></i> Cerrar</a></li>
+          </ul>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
-    <div id="header-2">
-<div class="container">
- <div class="row"> 
-    <div class="col-xs-6">
-      <div class=>
-        <h1>Bienvenido</h1>
-          <h1>Plataforma de la Evaluación de Carácter Diagnóstico Formativa</h1>
-          <h2 style="font-size: 16px;" class="subtitle">Si es la primera vez que ingresa a la plataforma, por favor haga clic en “Registro” </h2>
-          <a href="registro_camarografo.html"><button style="float:left; font-size:13px;" type="button" class="btn btn-success btn-xs">Registro</button></a>
-        
-          <h2 style="font-size: 19 px; margin-top: 45px;" class="subtitle">De lo contrario, ingrese a la plataforma diligenciando la información que se solicita a continuación.</h2>
-          </div>
-          <div class="panel-body" style="padding-top: 0px;">
-    <form role="form" class="new_persona" id="new_persona" action="/personas/sign_in" accept-charset="UTF-8" method="post" _lpchecked="1"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token">
-      <div class="form-group">
-         <div class="form-group">
-        <label style="color: #fff;" for="persona_tipo_documento_id">Tipo Documento</label>
-        <select name="persona[tipo_documento_id]" id="persona_tipo_documento_id" style="margin-left:12px;">
-          <option value="2">Cédula de ciudadanía</option>
-          <option value="3">Cédula de extranjería</option>
-          <option value="5">Pasaporte</option></select>
-      </div>
-        <label style="color: #fff;" for="persona_documento">Número de Documento</label>
-        <input autofocus="autofocus" class="form-control" type="text" value="Ej. 80186850" name="persona[documento]" id="persona_documento" autocomplete="off" >
-      </div>
-    
-      <div class="form-group">
-        <label style="color: #fff;" for="persona_password">Contraseña</label>
-        <input autocomplete="off" class="form-control" type="password" value="Ej. 12345" name="persona[password]" id="persona_password" >
-      </div>
-        <div class="checkbox">
-          <label>
-            <input name="persona[remember_me]" type="hidden" value="0"><input type="checkbox" value="1" name="persona[remember_me]" id="persona_remember_me">
-            <label style="color: #fff; margin-left: 0px; margin-top: 0px; padding-left: 7px; margin-bottom: 20px;" for="persona_remember_me">Guarda contraseña</label>
-          </label>
-           <a href="#"><button style="float:right; font-size:16px;" type="button" class="btn btn-success btn-xs">Recordar Contraseña</button></a>
+<div class="container adjuntarVideo">
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default" style="margin-top:-37px;">
+        <div class="panel-heading">
+          <h3 class="panel-title">Adjuntar Video Autograbación</h3>
         </div>
-      <a href="#"><button style="font-size:16px;" type="button" class="btn btn-success btn-sm">Ingresar</button></a>
-   
-          </div>        
-        </div>
+      <div class="panel-body" style="text-align:center;">
+        <div class="table-responsive">
+          <table class="table table-hover">  
+            <tbody>
+                <tr style="border:1px solid #ddd;">
+                     <td style="width: 412px;"> <p style="font-size:13px; margin-bottom: 0px;padding-top: 3px;padding-left: 13px;">Estimado profesor de clic en el botón seleccionar archivo <br>y adjunte su video.</p></td>
 
-  <div class="col-xs-6">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="
-    width: 100%; text-align:center;">
-                  
-            <!-- slides -->
-            <div class="carousel-inner">
-            <div class="item active">
-              <div class="video-container">
-                <h2 style="color:#fff;">Ayuda de Uso Plataforma</h2>
-                <iframe width="400px" height="300px" src="https://www.youtube.com/embed/efS_KSDqiAg" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>            
-            </div>
-          </div>
-          </div>
-        </div>
+                    <td style=" background: #F9E384; padding-top: 10px;"> <input style=" height: 26px; padding: 3px; padding-bottom: 32px;padding-top: 7px; "type="file" title="Adjuntar Archivo"> </td>
+                    <td style=" background: #F9E384;"><button style="margin-top: 10px;" type="submit" class="btn btn-success btn-sm">Guardar Video</button></td>
+                </tr>
+              
+             
+            </tbody>
+        </table>
+        </div>    
+      </div>
     </div>
+  </div>
+ 
+</div>
 </div>
 
+    <!-- Page Content -->
+          
 
-<div id="footer" style="padding: 37px 0 5px;">
+  
+ <div id="footer" style="padding: 37px 0 5px;">
   <div class="container">
     <div class="row">
         <div class="col-xs-6 col-sm-3" style="text-align: -webkit-center;">
@@ -151,7 +160,7 @@
       <div class="row">
         <div class="col-xs-12">
 
-          <div class="panel panel-primary">
+          <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Video Ayuda</h3>
             </div>
@@ -172,11 +181,18 @@
               </div>
             </div>
           </div>
-        </div>       
+          
+
+
+        </div>
+        
       </div>
+
+
     </div>
   </div>
 </div>
+
 
 
    <!-- Ventana Modal Manual de Uso  -->
@@ -198,7 +214,6 @@
     </div>
   </div>
 </div>
-
 
 
     <!-- jQuery -->
