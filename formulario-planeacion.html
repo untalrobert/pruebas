@@ -255,7 +255,8 @@
 
             <div class="form-group">
               <label for="comment"><br>Mencione los materiales y recursos que va a utilizar durante la clase.</label>
-              <textarea class="form-control" rows="5" placeholder="máximo 60 caracteres" id="comment"></textarea>
+              <input type="text" class="form-control" placeholder="máximo 60 caracteres">
+              <!-- <textarea class="form-control" rows="5" placeholder="máximo 60 caracteres" id="comment"></textarea> -->
             </div>
                <!--  <div class="form-group">
               <label for="comment"><br></label>
@@ -481,7 +482,6 @@
 </div>
 
 
-
    <!-- Ventana Modal Manual de Uso  -->
 <div class="modal fade" id="myModalVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -508,6 +508,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
     <script>$(document).ready(function() {
         var iCnt = 0;
 
@@ -537,7 +538,7 @@
 
  $('#main').after(container, divSubmit); 
             }
-            else {      //se establece un limite para añadir elementos, 10 es el limite
+            else {    //se establece un limite para añadir elementos, 10 es el limite
                 
                 $(container).append('<label>Limite Alcanzado</label>'); 
                 $('#btAdd').attr('class', 'bt-disable'); 
