@@ -165,7 +165,9 @@
   border:none;
 }
 
-
+textarea.form-control{
+  height: 60px;
+}
 
 /* footer */
 #footer {
