@@ -275,7 +275,8 @@
               <textarea class="form-control" rows="5" placeholder="máximo 60 caracteres" id="comment"></textarea>
             </div> -->
             <div id="main">
-              <input type="button" id="btAdd" value="+" class="bt" />
+              <p style="margin-bottom: 2px; margin-top: -13px; font-size: 12px; color: #D46969;">Puede agregar hasta 10 materiales y recursos dando clic en +</p>
+              <input type="button" data-toggle="tooltip" data-placement="top" title="Puede agregar hasta 10 materiales y recursos" id="btAdd" value="+" class="bt" />
               <input type="button" id="btRemove" value="-" class="bt" />
               <input type="button" id="btRemoveAll" value="Eliminar Todo" class="bt" /><br />
             </div>
@@ -570,6 +571,13 @@
 
         });
     });
+
+  </script>
+
+  <script>
+  $('#myTooltip').on('hidden.bs.tooltip', function () {
+  $('#element').tooltip('show')
+})
 
   </script>
 
