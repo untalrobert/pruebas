@@ -509,13 +509,18 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+      <script>
+        $('#myTooltip').on('hidden.bs.tooltip', function () {
+        $('#element').tooltip('show')
+      })
+  </script>
 
     <script>$(document).ready(function() {
         var iCnt = 0;
 
 // Crear un elemento div añadiendo estilos CSS
         var container = $(document.createElement('div')).css({
-            padding: '5px', margin: '30px', width: '500px',
+            padding: '5px', margin: '5px', width: '100%', 
             borderTopColor: '#999', borderBottomColor: '#999',
             borderLeftColor: '#999', borderRightColor: '#999'
         });
@@ -573,14 +578,6 @@
     });
 
   </script>
-
-  <script>
-  $('#myTooltip').on('hidden.bs.tooltip', function () {
-  $('#element').tooltip('show')
-})
-
-  </script>
-
 </body>
 
 </html>
