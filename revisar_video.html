@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-      <link rel="shortcut icon" href="img/favicon.ico">
-
-
-    <title>Revisor Videos</title>
+    <title>Panel Par evaluador</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -26,11 +23,13 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
+
 <body>
   
 
-    <nav class="navbar navbar-default">
+     <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -46,15 +45,43 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
       <ul class="nav navbar-nav navbar-right">
-         
         <li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-play-circle-o fa-fw"></i>Video Tutorial</a></li>
-        <li><a href="#" data-toggle="modal" data-target="#myModalVideo"><i class="fa fa-book fa-fw "></i>Manual de uso</a></li>
-        <li class="dropdown" style="    background-color: #FFCF00;">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Peter Parker<i class="fa fa-user fa-lg fa-fw"></i>  <i class="fa fa-caret-down"></i></a>
+        <li><a href="#" data-toggle="modal" data-target="#myModalVideo"><i class="fa fa-book fa-fw "></i>Manual De Uso</a></li>
+        <!-- /.dropdown-alerts -->
+         <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="notificaciones.html">
+                                <div>
+                                    <i class="fa fa-comment-o fa-fw"></i> Notificaciones
+                                    <span class="pull-right text-muted small">3 notificaciones</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>                 
+        
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-newspaper-o fa-fw"></i> Noticias 
+                                    <span class="pull-right text-muted small">4 Noticias</span>
+                                </div>
+                            </a>
+                        </li>
+                     
+                        
+                    </ul>                    
+                </li>
+                <!-- /.dropdown-alerts -->
+       <li class="dropdown" style="background-color: #FFCF00">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="font-weight: 800;">Peter Parker<i class="fa fa-user fa-lg fa-fw"></i>  <i class="fa fa-caret-down"></i></a>
           <ul class="dropdown-menu">
             <li><a href="#">Perfil</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#"><i class="fa fa-times-circle-o fa-fw" style="color:#0077A8;"></i> Cerrar</a></li>
+            <li><a href="#"><i class="fa fa-times-circle-o fa-fw" style="color:#0077A8;"></i>Cerrar</a></li>
           </ul>
         </li>
       </ul>
@@ -65,45 +92,7 @@
 
     <!-- Page Content -->
     <div class="container">
-         <div class="row">        
-          <div class="panel panel-primary">
-  <div class="panel-heading">VIDEOS</div>
-  <div class="panel-body">     
-
-      <div class="table-responsive" style="height:200px;">
-        <table class="table table-bordered table-hover">
-          <thead>
-            <tr>
-              <th>Bienvenido ( nombre ) videos a revisar</th>
-              <th style="width: 410px;">Video Evaluados</th>
-            </tr>
-          </thead>
-          <tbody id="myTable">
-            <tr>
-              <td>Evaluaciones Pendientes</td>
-              <td>21</td>             
-            </tr>
-            <tr>
-              <td>evaluaciones Terminadas</td>
-              <td>1</td>                          
-            </tr>
-           
-          </tbody>
-        </table>
-        <div class="row evaluarRevi">
-          <div class="col-md-6 col-md-offset-3">
-            <input type="button" class="btn btn-success  btn-sm eval" id="botonocultamuestra" value="Evaluar" style="font-size:13px;cursor:pointer;margin:1px;padding:5px;"/>
-          </div>
-        </div>             
-      </div>  
-     </div>
-  </div>  
-</div>
-    </div>
-    <!-- /.container -->
-
-     <div class="container">
-         <div id="divocultamuestra" >
+         <div class="row">
             <div class="col-md-6">
           <div class="panel panel-primary" >
   <div class="panel-heading">Video a Evaluar</div>
@@ -172,8 +161,9 @@
    
 </div>
     </div>
+    <!-- /.container -->
   
-  <div id="footer" style="padding: 37px 0 5px;">
+<div id="footer" style="padding: 37px 0 5px;">
   <div class="container">
     <div class="row">
         <div class="col-xs-6 col-sm-3" style="text-align: -webkit-center;">
@@ -193,7 +183,8 @@
           <p style="font-size:13px;"class="copyright">Contactomaestro2025@icfes.gov.co</p>
         </div>
         </div>
-      </div>      
+      </div>
+      
   </div> 
 
 
@@ -203,6 +194,7 @@
     <div class="modal-content">
       <div class="row">
         <div class="col-xs-12">
+
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Video Ayuda</h3>
@@ -210,27 +202,33 @@
             <div class="panel-body">
               <div class="row">
                 <div class="col-xs-12">
+
                   <div class="embed-responsive embed-responsive-16by9">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/84Mzvag53BI" frameborder="0" allowfullscreen></iframe>
                   </div>
+
                   <div class="modal-footer" style="padding:0px; border:none;">                   
                     <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
                   </div>
-                </div>                
+
+                </div>
+                
               </div>
             </div>
           </div>
-        </div>       
+          
+
+
+        </div>
+        
       </div>
+
+
     </div>
   </div>
 </div>
 
-
-
-
-
- <!-- Ventana Modal Manual de Uso  -->
+<!-- Ventana Modal Manual de Uso  -->
 <div class="modal fade" id="myModalVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -252,8 +250,62 @@
 
 
 
+
+
+<!-- FORMULARIO CONFIRMACION ENVIO VIDEO -->
+<div class="modal fade" id="modalConfirmacionPar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Formulario de confirmación</h4>
+      </div>
+      <div class="modal-body ">
+        <div class="row">
+          <div class="col-xs-12">
+            <h4 style="text-align: -webkit-center;margin-bottom: 22px;">Antes de terminar el proceso de envío  por favor indique:</h4>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> La calidad del sonido no permite entender con claridad el desarrollo de la clase.
+                </label>     
+                <!-- Radio Button -->                
+            </li>
+              <li class="list-group-item">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1">La imagen del video no es clara e impide visualizar con claridad el desarrollo de la clase.
+                </label>     
+                <!-- Radio Button -->
+              </li>
+              <li class="list-group-item">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> El video se encuentra cortado o no es continuo.
+                </label>
+              </li>             
+            </ul>                       
+          </div>          
+        </div>  
+       
+        
+      <div class="modal-footer" >
+        <div class="row">  
+          <div class="col-xs-12 cerrarVentana">
+              <button  type="button" class="btn btn-success" data-dismiss="modal">Enviar Reporte</button>
+          </div>
+        </div>
+      </div>       
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN FORMULARIO CONFIRMACION ENVIO VIDEO -->
+
+
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -261,32 +313,13 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
 });
 </script>
-
-
-
-
-
-
 <script type="text/javascript">
-  $(document).ready(function(){
-     $('#divocultamuestra').hide()
-   $("#botonocultamuestra").click(function () {
-      $("#divocultamuestra").each(function() {
-        displaying = $(this).css("display");
-        if(displaying == "block") {
-          $(this).fadeOut('slow',function() {
-           $(this).css("display","none");
-          });
-        } else {
-          $(this).fadeIn('slow',function() {
-            $(this).css("display","block");
-          });
-        }
-      });
-    });
-  });
-  </script>
+    $('#modalError').modal({
+      keyboard: false
+    })
 
-
+    </script>
+    
 </body>
+
 </html>

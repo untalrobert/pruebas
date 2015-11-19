@@ -234,6 +234,18 @@ textarea.form-control{
   margin-bottom: 10px;
 }
 
+.evaluarRevi{
+  text-align: center;
+
+}
+.eval{
+
+  border-bottom: 2px solid #0E540E;
+  border-radius: 0px;
+  font-size: 13px;
+}
+
+
 /* footer */
 #footer {
   background: #fff;
