@@ -68,7 +68,7 @@
          <div class="row">        
           <div class="panel panel-primary">
   <div class="panel-heading">VIDEOS</div>
-  <div class="panel-body">     
+  <div class="panel-body"> 
 
       <div class="table-responsive" style="height:200px;">
         <table class="table table-bordered table-hover">
@@ -86,8 +86,7 @@
             <tr>
               <td>evaluaciones Terminadas</td>
               <td>1</td>                          
-            </tr>
-           
+            </tr>           
           </tbody>
         </table>
         <div class="row evaluarRevi">
@@ -106,13 +105,13 @@
          <div id="divocultamuestra" >
             <div class="col-md-6">
           <div class="panel panel-primary" >
-  <div class="panel-heading">Video a Evaluar</div>
-  <div class="panel-body">
+      <div class="panel-heading">Video a Evaluar</div>
+    <div class="panel-body">
     <table >
        <div class="embed-responsive embed-responsive-16by9">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/1QG2RMApZN4" frameborder="0" allowfullscreen></iframe>
         </div>    
-           <button style="margin-top: 6px; float: right;" data-toggle="modal" data-target="#modalConfirmacionPar"type="button" class="btn btn-success btn-xs eval">Reportar Video</button>  
+           <button style="margin-top: 6px; float: right;" data-toggle="modal" data-target="#modalConfirmacionRev"type="button" class="btn btn-success btn-xs eval">Reportar Video</button>  
       </table>    
   </div>
 </div>
@@ -126,52 +125,38 @@
     <thead>
         <tr>
            <!--  <th style="padding-right: 0px;padding-left: 0px; border-left-width: 0px; border-right-width: 0px; width: 100px;">Selección</th> -->
-            <th></th>
-            
+            <th></th>            
         </tr>
     </thead>
-    <tbody>
-       
+    <tbody>       
         <tr>
-            <td>
-            
+            <td>           
 
-              </td>  
+            </td>  
         </tr>
         
     </tbody>
-     <tbody>
-       
-        <tr>
-          
+     <tbody>       
+        <tr>          
             <td></td>
-        </tr>
-        
+        </tr>        
     </tbody>
 </table>
-
-
-
-
-<table class="table table-bordered table-hover">  
-
+    <table class="table table-bordered table-hover">
      <tbody>       
         <tr>
-            <td><button style="margin-top: 6px; float: center;" data-toggle="modal" data-target="#myModalEntregarEvalu"type="button" class="btn btn-success btn-xs">Entregar Evaluación</button></td>
-            
-           
-            </tr>        
-          </tbody>
-      </table>
-    
-    
+          <td><button style="margin-top: 6px; float: center;" data-toggle="modal" data-target="#myModalEntregarEvalu"type="button" class="btn btn-success btn-xs">Entregar Evaluación</button></td>          
+        </tr>        
+      </tbody>
+      </table>    
+    </div>
   </div>
-</div>
-</div>  
-
-   
+</div>   
 </div>
     </div>
+
+
+
   
   <div id="footer" style="padding: 37px 0 5px;">
   <div class="container">
@@ -227,7 +212,50 @@
 </div>
 
 
-
+<!-- FORMULARIO CONFIRMACION ENVIO VIDEO -->
+<div class="modal fade" id="modalConfirmacionRev" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Reporte Video</h4>
+      </div>
+      <div class="modal-body ">
+        <div class="row">
+          <div class="col-xs-12">
+            <h4 style="text-align: -webkit-center;margin-bottom: 22px;">Reportar Video</h4>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> Video
+                </label>     
+                <!-- Radio Button -->                
+            </li>
+            <li class="list-group-item">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> Imagen
+                </label>     
+                <!-- Radio Button -->                
+            </li>             
+                       
+            </ul>                       
+          </div>          
+        </div>  
+       
+        
+      <div class="modal-footer" >
+        <div class="row">  
+          <div class="col-xs-12 cerrarVentana">
+              <button  type="button" class="btn btn-success" data-dismiss="modal">Enviar Reporte</button>
+          </div>
+        </div>
+      </div>       
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN FORMULARIO CONFIRMACION ENVIO VIDEO -->
 
 
  <!-- Ventana Modal Manual de Uso  -->
