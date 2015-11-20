@@ -253,15 +253,8 @@
             <!-- <hr style="border-top: 2px solid #337AB7;"> -->
             <div class="form-group">
               <label for="comment"><br>Mencione los materiales y recursos que va a utilizar durante la clase</label>
-              <input type="text" class="form-control" placeholder="máximo 60 caracteres">
-            </div>             
-            <div id="main">
-              <p style="margin-bottom: 2px; margin-top: -13px; font-size: 12px; color: #D46969;">Puede agregar hasta 10 materiales y recursos dando clic en +</p>
-              <input type="button" data-toggle="tooltip" data-placement="top" title="Puede agregar hasta 10 materiales y recursos" id="btAdd" value="+" class="bt" />
-              <input type="button" id="btRemove" value="-" class="bt" />
-             <br />
-            </div>
-           
+              <textarea class="form-control" rows="5" placeholder=" máximo 600 caracteres, por favor separe los materiales usados usando ; ( punto y coma )" id="comment"></textarea>
+            </div>  
 
              <div class="form-group">
               <label for="comment"><br>Describa las metodologías y/o estrategias empleadas para el desarrollo de la clase (cómo desarrollará las actividades durante la clase)</label>
@@ -481,71 +474,7 @@
         $('#myTooltip').on('hidden.bs.tooltip', function () {
         $('#element').tooltip('show')
       })
-  </script>
-
-    <script>$(document).ready(function() {
-        var iCnt = 0;
-
-// Crear un elemento div añadiendo estilos CSS
-        var container = $(document.createElement('div')).css({
-            padding: '5px', margin: '5px', width: '100%', 
-            borderTopColor: '#999', borderBottomColor: '#999',
-            borderLeftColor: '#999', borderRightColor: '#999'
-        });
-
-        $('#btAdd').click(function() {
-            if (iCnt <= 8) {
-
-                iCnt = iCnt + 1;
-
-                // Añadir caja de texto.
-                $(container).append('<input type=text class="form-control"  id=tb' + iCnt + ' ' +
-                            'placeholder="máximo 60 caracteres ' + '" />');
-
-                if (iCnt == 1) {   
-
- var divSubmit = $(document.createElement('div'));
-                    $(divSubmit).append( + 
-                            'id=btSubmit  />');
-
-                }
-
- $('#main').after(container, divSubmit); 
-            }
-            else {    //se establece un limite para añadir elementos, 10 es el limite
-                
-                $(container).append('<label>Limite Alcanzado</label>'); 
-                $('#btAdd').attr('class', 'bt-disable'); 
-                $('#btAdd').attr('disabled', 'disabled');
-
-            }
-        });
-
-        $('#btRemove').click(function() {   // Elimina un elemento por click
-            if (iCnt != 0) { $('#tb' + iCnt).remove(); iCnt = iCnt - 1; }
-        
-            if (iCnt == 0) { $(container).empty(); 
-        
-                $(container).remove(); 
-                $('#btSubmit').remove(); 
-                $('#btAdd').removeAttr('disabled'); 
-                $('#btAdd').attr('class', 'bt') 
-
-            }
-        });
-
-        $('#btRemoveAll').click(function() {    // Elimina todos los elementos del contenedor
-        
-            $(container).empty(); 
-            $(container).remove(); 
-            $('#btSubmit').remove(); iCnt = 0; 
-            $('#btAdd').removeAttr('disabled'); 
-            $('#btAdd').attr('class', 'bt');
-
-        });
-    });
-
-  </script>
+  </script>  
  
 </body>
 
