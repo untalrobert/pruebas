@@ -189,6 +189,20 @@ a.navbar-brand:hover {
 
 }
 
+.errorForm{
+  padding: 3px;
+  margin-bottom: 37px;
+
+}
+
+.errorForm h3{
+  padding: 6px;
+  margin-left: 20px;
+
+}
+.errorForm ul{
+  line-height: 24px;
+}
 
 .btn-default:hover{
   background: #5CB85C;
