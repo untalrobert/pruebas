@@ -192,6 +192,10 @@ a.navbar-brand:hover {
 .errorForm{
   padding: 3px;
   margin-bottom: 37px;
+   border-bottom: 2px solid #DADADA;
+     -webkit-box-shadow: 0 8px 6px -6px black;
+     -moz-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 2px 8px 6px -6px black;
 
 }
 
