@@ -31,6 +31,11 @@ a.navbar-brand:hover {
     color: #ddd !important;
 }
 
+/*Separadores hr*/
+.caption .separadores{
+      border: 1px solid #337AB7;
+}
+
 
 .navbar-default{
     
@@ -283,6 +288,12 @@ p.copyright {
   color: #000000;
   font-weight: 600;
 }
+.estado{
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.especificaciones
 
 .fa-inverse-footer{
   color: #337AB7;
@@ -309,6 +320,22 @@ p.copyright {
 a:focus{
   outline: 0px;
 }
+
+/*PAnel de Encestas*/
+
+.encuestasPanel{
+  border: 1px solid #337AB7;
+}
+
+/*Videos encuestas*/
+
+.encuestas iframe{
+  height: 60%;
+  margin-top: 20px;
+  border: 6px solid #333;
+
+}
+
 
 
 /** 2 level sub menu **/

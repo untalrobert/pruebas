@@ -124,12 +124,9 @@
             </td> -->
             <td>Práctica Educativa</td>
             <td>
-              <div class="progress progress-success">
-                    <div class="bar" style="float: left; width: 0%; " data-percentage="100"></div>
-                    </div>
-              
+              <p class="estado">Su video a sido guardado correctamente</p>              
             </td>
-            <td style="width: 180px;">
+            <td style="width: 160px;">
               <div data-toggle="modal"  data-target="#modalConfirmacion" style="position:relative;float:right; width:50px ">
                            <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar Video"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>
                          
@@ -164,11 +161,11 @@
     </div>
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body instrucciones" style="background-color: #F3CDCD;">
-        <p>
+        <p class="especificaciones">
       Recuerde que si su video no cuenta con las características técnicas, este no podrá ser cargado en la plataforma. <br> <br>
-      * Vídeos de máximo 300 MB <br>
+      * Vídeos de máximo 350 MB <br>
       * Formato Flv o Mp4<br>
-      * Resolución de 360 puntos de alto<br>
+     <!--  * Resolución de 360 puntos de alto<br> -->
       * El formato puede ser 4:3</p>
       </div>
     </div>
@@ -195,13 +192,17 @@
         <tr>
            <!--  <th style="padding-right: 0px;padding-left: 0px; border-left-width: 0px; border-right-width: 0px; width: 100px;">Selección</th> -->
             <th>Archivos</th>
-            <th>Especificaciones</th>
+            <th>Estado de Subida</th>
+            <th>Especificaciones</th>            
             <th>Acciones</th>
         </tr>
     </thead>
     <tbody>       
         <tr>
-            <td style="text-align: -webkit-auto;">Planeación de clase</td>
+
+            <td style="text-align: -webkit-center;">Planeación de clase</td>
+            <td><p class="estado">Su video a sido guardado correctamente</p>              
+            </td>
 
             <td>
                 <button style="margin-top: 5px;" type="button" class="btn btn-info btn-xs"data-container="body" data-toggle="popover" title="Evidencia de planeación" data-trigger="focus" data-placement="bottom" data-content="En este apartado deberá cargar su evidencia de planeación correspondiente a la clase que será grabada. Este documento debe tener las siguientes características: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -212,6 +213,7 @@
               Recuerde que el archivo debe venir identificado de la siguiente manera: Número de cédula_ letra P. Ejemplo: 1000000000_P.&nbsp;&nbsp;  ">especificaciones</button>   
               
             </td>
+
             <td style="width: 140px;">
               <div class="fileinput fileinput-new" data-provides="fileinput" style="position:relative;float:right; width:50px ">
                            <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar Archivo"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>
@@ -226,14 +228,15 @@
                 </div>
 
 
-              </td>  
+              </td>              
         </tr>
         
     </tbody>
      <tbody>
        
         <tr>
-            <td>Evidencia de evaluación a estudiantes</td>            
+            <td>Evidencia de evaluación a estudiantes</td> 
+             <td><p class="estado">Su video a sido guardado correctamente</p> </td>           
             <td>
              <button style="margin-top: 5px;" type="button" class="btn btn-info btn-xs"data-container="body" data-toggle="popover" title="Evidencia de evaluación" data-placement="bottom" data-trigger="focus" data-content="En este apartado deberá cargar su evidencia de la evaluación realizada a un estudiante. Este archivo debe tener las siguientes características:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               1. Estar en formato PDF o en Word. Si la evaluación del estudiante o su retroalimentación contempla la grabación de un audio, el archivo debe venir en formato Mp3 y pesar máximo 5mb que equivalen aproximadamente a cinco minutos. En todo caso no se puede cargar más de un archivo. &nbsp; &nbsp; &nbsp; &nbsp;   
