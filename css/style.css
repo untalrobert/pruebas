@@ -293,7 +293,7 @@ p.copyright {
   text-align: center;
   margin-bottom: 0px;
 }
-.especificaciones
+
 
 .fa-inverse-footer{
   color: #337AB7;
@@ -329,10 +329,11 @@ a:focus{
 
 /*Videos encuestas*/
 
-.encuestas iframe{
-  height: 60%;
+.encuestas {
+  height: 30%;
   margin-top: 20px;
-  border: 6px solid #333;
+  border: 15px solid #333;
+  width: 100%;
 
 }
 
