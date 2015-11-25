@@ -20,6 +20,35 @@
 .navbar-default .navbar-nav>li>a:hover{
   color: #fff;
 }
+.close{
+  opacity: inherit;
+  font-weight: 100;
+  font-size: 30px;
+  color: #fff;
+}
+
+button .close{
+  opacity: inherit;
+  font-weight: 100;
+  font-size: 30px;
+  color: #fff;
+
+}
+
+.close:hover{
+  opacity: inherit;
+  font-weight: 100;
+  font-size: 30px;
+  color: #fff;
+}
+
+button .close:hover{
+  opacity: inherit;
+  font-weight: 100;
+  font-size: 30px;
+  color: #fff;
+
+}
 
 a.navbar-brand {
   color: #fff !important;
@@ -32,8 +61,8 @@ a.navbar-brand:hover {
 }
 
 /*Separadores hr*/
-.caption .separadores{
-      border: 1px solid #337AB7;
+.separadores{
+    border: 1px solid #337AB7;
 }
 
 
@@ -94,8 +123,6 @@ a.navbar-brand:hover {
     background-color: #00AFE4;
     
 }
-
-
 
 
 .navbar-inverse .navbar-nav > li > a {
@@ -325,18 +352,134 @@ a:focus{
 
 .encuestasPanel{
   border: 1px solid #337AB7;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  -webkit-box-shadow: 6px 3px 14px 0px rgba(55, 50, 50, 0.66);
+  -moz-box-shadow:    6px 3px 14px 0px rgba(55, 50, 50, 0.66);
+  box-shadow:         6px 3px 14px 0px rgba(55, 50, 50, 0.66);
+
+}
+
+.cajaEncuestas{
+  text-align: center;
+  
+}
+.finalizado{
+ /* border: 2px solid #ddd;*/
+  text-align: left;
+  height: 20px;
+}
+
+.listaFin{
+  float: right;
+}
+
+
+.listaNo{
+  float: left;
+}
+
+.encuestasPanel h3{
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  color: #022E56;
+}
+
+.encuestasPanel h5{
+ font-size: 18px;
+ font-weight: 600;
+ margin-top: 0px;
+ margin-bottom: 14px;
+ color: #022E56;
+}
+
+.subtitulosEncuestas{
+  font-size: 18px;
+}
+
+.cajabtn{
+  height: 20px;
+}
+
+.marcador{
+  background: #5CB85C;
+}
+
+.encuestasPanel .prof{
+  margin-top: 20px;
+  padding-bottom: 3px;
+}
+
+.realizar{
+  margin-bottom: 10px;
+}
+.subtitulosEncuestas {
+ text-align: center;
+ margin-top: 61px;
+}
+
+.prof2 p{
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 19px;
+  color: rgb(62, 127, 255);
+  font-weight: 600;
+}
+.prof2 h4{
+  text-align: center;
+  margin-top: -7px;
+  margin-bottom: 1px;
+}
+.prof2{
+  margin-top: 15px;
+}
+
+
+.visto{
+    text-align: right;
+    padding-right: 2%;
+    z-index: 57;
+    margin-top: -31px;
+    position: absolute;
+    margin-left: 2px;
+}
+
+.visto i{
+  color: #DAD7D7;
 }
 
 /*Videos encuestas*/
 
 .encuestas {
-  height: 30%;
-  margin-top: 20px;
-  border: 15px solid #333;
+  margin-top: 0px;
   width: 100%;
 
 }
 
+.encuestas iframe { 
+  width: 100%;
+  width: 100%;
+  border: 10px solid #333;
+
+}
+.tutoRial{
+  margin-bottom: 33px;
+}
+
+.separador{
+  border: 1px solid #337AB7;
+  margin-top: 43px;
+  margin-bottom: 10px;
+}
+
+.separador1{
+  border: 1px solid #337AB7;
+  margin-top: 2px;
+  margin-bottom: 10px;
+
+}
 
 
 /** 2 level sub menu **/
@@ -712,4 +855,121 @@ p.copyright {
 
   
 }
- 
+
+
+
+
+
+
+
+#fixeddiv{
+  left:830px;
+  top:70px;
+  position:fixed;
+}
+
+#fixeddiv #menu_fixed_entregar{
+  text-align:center;
+  margin:.5em auto;
+}
+
+#fixeddiv #menu_fixed_preguntas{
+  margin:1em;
+  text-align:center;
+}
+
+#free_dialog{
+  text-align:left;
+}
+
+
+
+.menu_fix_titulo{
+  text-align:center;
+  color:#3b5a9a;
+  border:0;
+  padding:5px;
+  font-size:120%;
+  font-weight:700;
+  padding-top:20px;
+}
+
+.menu_fixed{
+  width:80%;
+  background:#fff;
+  border: 2px solid #337AB7;
+}
+#fixeddiv_handler{
+  text-align: center;
+}
+
+.menu_fixed .acciones{
+  margin-top:5px;
+  text-align:right;
+}
+/*.menu_fixed .pregunta_omitida, .menu_fixed .pregunta_contestada{
+}*/
+.menu_fixed .pregunta_omitida{
+  color:#9d9d9d;
+  font-weight:700;
+}
+.menu_fixed .pregunta_contestada{
+      color: #337AB7;
+    font-weight: 900;
+}
+.menu_fixed_boton_minimizar{
+  float:right;
+  border:1px solid #fff;
+  padding:0 2px;
+  background:#0e9b0e;
+  color:#fff;
+  margin-bottom:4px;
+  cursor:pointer;
+}
+.menu_fixed_boton_minimizar_{
+  border-bottom:3px solid #fff;
+  margin:2px;
+  width:8px;
+  height:9px;
+}
+
+.menu_fixed_top{
+  background:#337AB7;
+  color:#fff;
+  cursor:pointer;
+  height:2em;
+  line-height:2em;
+  font-size:110%;
+  padding-left:15px;
+}
+
+.pregunta_letra{
+  padding-left: 13px;
+  padding-bottom: 0px;
+}
+
+.alternativas p{
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.alternativas label{
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 6px;
+}
+
+#menu_fixed_contenido{
+  font-size: 16px;
+}
+.entregar{
+  text-align: center;
+  padding-bottom: 9px;
+
+}
+.botonesEnviar{
+  border-radius: 0px;
+  border-bottom: 2px solid #0C560C;;
+
+      
+}

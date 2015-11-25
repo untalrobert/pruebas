@@ -98,41 +98,80 @@
       <div class="row">
     <div class="col-sm-6">
     <div class="thumbnail encuestasPanel">
-      <div class="caption">
-        <h3 style="text-align:center;">ESTUDIANTES</h3>
-        <hr class="separadores">
-        <div class="row">
+      <div class="caption realizar">
+        <h3 style="text-align:center;">Autoevaluación</h3>
+        <hr class="separador1">
+        <div class="row cajabtn">
         <div class=".col-md-6 .col-md-offset-3">
         <div class="prof">       
-        <a href="panel_profesor.html" class="btn btn-success" role="button">Realizar</a>
-        </div>  
+        <a data-toggle="modal" data-target="#myModalAutoEva" class="btn btn-success" role="button">Realizar</a>
+        </div>
+         <div class="row visto">
+            <div class="col-md-12">
+              <i class="fa fa-check-circle fa-2x"></i>
+            </div>
+          </div> 
         </div>       
       </div>
       </div>
-      <h3>Video Tutorial</h3>
-      <div class="embed-responsive embed-responsive-16by9 encuestas">
+      <hr class="separador">
+      <h5 class="subtitulosEncuestas">Video Tutorial</h5>
+       <div class="row">
+        <div class="col-md-10 col-md-offset-1 tutoRial">
+          <div class="embed-responsive embed-responsive-16by9 encuestas">
         <iframe width="360" height="15" src="https://www.youtube.com/embed/jhA4V1crBVg" frameborder="0" allowfullscreen></iframe>
+      </div>
+          
+
+        </div>
       </div>
     </div>
    
   </div>
     <div class="col-sm-6">
     <div class="thumbnail encuestasPanel">
-      <div class="caption">
-        <h3 style="text-align:center;">ESTUDIANTES</h3>
-        <hr class="separadores">
-        <div class="row">
+      <div class="caption realizar">
+        <h3 style="text-align:center;">Encuestas Estudiantes</h3>
+        <hr class="separador1">
+        <div class="row cajabtn">
         <div class=".col-md-6 .col-md-offset-3">
-        <div class="prof">       
-        <a href="panel_profesor.html" class="btn btn-success" role="button">Realizar</a>
+        <div class="prof2">
+        <div class="row cajaEncuestas">
+          <div class="col-xs-6 finalizado">
+            <ul class="nav nav-pills listaFin" role="tablist">
+              <li role="presentation" ><a> Finalizado<span class="badge marcador">42</span></a></li>
+            </ul>
+            
+          </div>
+          <div class="col-xs-6 noRealizada">
+            <ul class="nav nav-pills listaNo" role="tablist">
+              <li role="presentation" ><a> No Realizado<span class="badge marcador">24</span></a></li>
+            </ul>
+            
+          </div>
+        </div>       
+          <!-- <h4>Estudiantes que no han presentado la prueba</h4>
+            <p>5 - 31</p> -->
+          <div class="row visto">
+            <div class="col-md-12 ">
+              <i class="fa fa-check-circle fa-2x"></i>
+            </div>
+          </div>          
         </div>  
         </div>       
       </div>
       </div>
-      <h3>Video Tutorial</h3>
-      <div class="embed-responsive embed-responsive-16by9 encuestas">
+      <hr class="separador">
+      <h5 class="subtitulosEncuestas">Video Tutorial</h5>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 tutoRial">
+          <div class="embed-responsive embed-responsive-16by9 encuestas">
         <iframe width="360" height="15" src="https://www.youtube.com/embed/jhA4V1crBVg" frameborder="0" allowfullscreen></iframe>
+      </div>       
+
+        </div>
       </div>
+      
     </div>
    
   </div>
@@ -221,6 +260,32 @@
     </div>
   </div>
 </div>
+
+
+<!--  MODAL CONFIRMAR AUTOEVALUACIÓN -->
+      <div class="modal fade" id="myModalAutoEva" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 style="color: #fff;" class="modal-title text-align:left;" id="myModalLabel">Confirmar ingreso a Evaluar</h4>
+            </div>
+            <div class="modal-body evaluacion">
+             <h4>Está seguro que quiere realizar su autoevaluación? confirme su ingreso</h4>
+             <p>Recuerde que tiene una solá oportunidad de realizarla</p>
+            </div>
+           <div class="modal-footer">
+              <div class="row">
+        <div class="col-xs-12">         
+          <button style="margin-top: 0px;" type="button" class="btn btn-info botonesEnviar btn-sm">Volver</button>
+          <a href="cuestionario.html"><button style="margin-top: 0px;" type="button" class="btn btn-success botonesEnviar btn-sm">Confirmar Ingreso</button></a>
+        </div>
+      </div>        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FINAL MODAL CONFIRMAR EVALUACION -->
 
 
 
