@@ -983,7 +983,7 @@ p.copyright {
 /*especificaciones*/
 
 .submenu{
-  font-size: 13px;
+  font-size: 13px;margin-top: 
 
 }
 .menuEspe{
@@ -1070,6 +1070,11 @@ p.copyright {
   color: #C17272;
 
   
+}
+
+.videoEvaluar{
+  position: fixed;
+  width: 40%
 }
 #main{
   margin-top: 20px;
