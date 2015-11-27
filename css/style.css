@@ -1048,7 +1048,15 @@ p.copyright {
 
 .preguntasEval .preguntaCorre{
   text-align: -webkit-left;
+}
+.contenidosPregun h4{
+  font-weight: 600;
+  font-size: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  color: #337AB7;
 
+  
 }
 
 
