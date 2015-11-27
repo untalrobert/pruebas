@@ -1,6 +1,8 @@
 
 .submenu{
   font-size: 13px;
+  height: 10px;
+  margin-bottom: 34px;
 
 }
 .menuEspe{
@@ -45,7 +47,7 @@
   border-right: #fff;
   color: #fff;
   padding: 4px 1px 4px 1px;
-    border-bottom: 2px solid #042D50;
+ /* border-bottom: 2px solid #042D50;*/
 }
 
 
@@ -100,4 +102,41 @@
 #main{
   margin-top: 8px;
   text-align: center;
+}
+
+@media (max-width: 1020px){
+  .menuEspe {
+    text-align: center;
+    margin-bottom: 61px;
+    color: #fff;  
+}
+
+.menuEspe li a{
+  
+  border-right: #fff;
+  color: #fff;
+  padding: 4px 1px 4px 1px;
+  border-bottom: none;
+}
+}
+
+@media (max-width: 767px){
+  .submenu{
+  
+  margin-bottom: 204px;
+
+}
+  
+  
+}
+
+
+@media (max-width: 492px){
+  .submenu{
+  
+  margin-bottom: 204px;
+
+}
+  
+  
 }
