@@ -973,3 +973,62 @@ p.copyright {
 
       
 }
+
+.paneles{
+    height: 28px;
+    padding: 3px;
+}
+
+
+/*especificaciones*/
+
+.submenu{
+  font-size: 13px;
+
+}
+.menuEspe{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+
+}
+.menuEspe li{
+  text-align: center;
+  background: #337AB7;
+  border-left: 2px solid #fff;
+  color: #fff; 
+}
+
+
+.menuEspe li a:hover{
+  
+  border-right: #fff;
+  color: #fff;
+  background: #FFCF00;
+  border-bottom: 2px solid #064E06;
+  color: #333;
+  font-size: 800;
+  border-radius: 0px;
+}
+
+
+
+.menuEspe li a:focus{
+  
+  border-right: #fff;
+  color: #fff;
+  background: #337AB7;
+  font-weight: 700;
+}
+
+
+
+.menuEspe li a{
+  
+  border-right: #fff;
+  color: #fff;
+  padding: 4px 1px 4px 1px;
+    border-bottom: 2px solid #042D50;
+}
+
+
