@@ -1054,6 +1054,7 @@ p.copyright {
 
 .preguntasEval .preguntaCorre{
   text-align: -webkit-left;
+  font-size: 13px;
 }
 .contenidosPregun h4{
   font-weight: 600;
