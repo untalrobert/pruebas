@@ -1032,3 +1032,23 @@ p.copyright {
 }
 
 
+/*Panel Evaluar Preguntas*/
+.respuesta{
+  width: 130px;
+  margin-right: 0px;
+}
+
+.respuesta .SiNo{
+  
+  margin-right: 0px;
+  vertical-align: baseline;
+}
+
+
+
+td .preguntaCorre{
+  text-align: -webkit-left;
+
+}
+
+

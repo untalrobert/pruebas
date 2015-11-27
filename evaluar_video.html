@@ -93,7 +93,7 @@
   <div class="row menuEspe">
      <div class="col-xs-12">
        <ul class="nav nav-pills nav-justified submenu">
-          <li role="presentation"><a href="#">ACTIVIDADES</a></li>
+          <li role="presentation"><a id="botonocultamuestra" href="#">ACTIVIDADES</a></li>
           <li role="presentation"><a href="#">Participación</a></li>
           <li role="presentation"><a href="#">Comunicación</a></li>
           <li role="presentation"><a href="#">Evaluación Formativa</a></li>
@@ -128,36 +128,59 @@
 </div>
 
 <div class="col-md-6">
-          <div class="panel panel-primary">
+  <div id="divocultamuestra" >
+  <div class="panel panel-primary">
   <div class="panel-heading paneles">Tabla de Correción</div>
   <div class="panel-body">
-    <table class="table table-bordered table-hover">
+    <table class="table table-condensed table-bordered preguntasEval">
     <thead>
         <tr>
-           <!--  <th style="padding-right: 0px;padding-left: 0px; border-left-width: 0px; border-right-width: 0px; width: 100px;">Selección</th> -->
-            <th></th>
-            
+            <th>#</th>
+            <th>Preguntas</th>            
+            <th>Respuestas</th>
         </tr>
     </thead>
     <tbody>
-       
         <tr>
-            <td>
-            
-
-              </td>  
+            <td>1.</td>         
+            <td class="preguntaCorre">Fulana no muchas de percal yo antojo</td>
+            <td class="respuesta">
+                <label class="radio-inline SiNo ">
+                 <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Si
+                 </label>
+                <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+                </label>
+               
+            </td>
         </tr>
-        
-    </tbody>
-     <tbody>
-       
         <tr>
-          
-            <td></td>
+            <td>2.</td>         
+            <td class="preguntaCorre">Subia selva ruina chi llamo oir campo llego ola</td>
+            <td class="respuesta">
+              <label class="radio-inline SiNo">
+                 <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Si
+                 </label>
+                <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+                </label>
+            </td>
         </tr>
-        
+        <tr>
+            <td>3.</td>        
+            <td class="preguntaCorre">Canto oh el epoca atras ni</td>
+            <td class="respuesta">
+              <label class="radio-inline SiNo">
+                 <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Si
+                 </label>
+                <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+                </label>
+            </td>
+        </tr>
     </tbody>
 </table>
+    
 
 
 
@@ -178,7 +201,7 @@
 </div>
 </div>  
 
-   
+   </div>
 </div>
     </div>
     <!-- /.container -->
@@ -410,6 +433,26 @@ $(document).ready(function(){
     })
 
     </script>
+
+    <script type="text/javascript">
+  $(document).ready(function(){
+  $('#divocultamuestra').hide()
+   $("#botonocultamuestra").click(function () {
+      $("#divocultamuestra").each(function() {
+        displaying = $(this).css("display");
+        if(displaying == "block") {
+          $(this).fadeOut('slow',function() {
+           $(this).css("display","none");
+          });
+        } else {
+          $(this).fadeIn('slow',function() {
+            $(this).css("display","block");
+          });
+        }
+      });
+    });
+  });
+  </script>
     
 </body>
 
