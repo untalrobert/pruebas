@@ -50,6 +50,11 @@
 
 
 /*Panel Evaluar Preguntas*/
+.paneles{
+    height: 28px;
+    padding: 3px;
+}
+
 .respuesta{
   width: 130px;
   margin-right: 0px;
