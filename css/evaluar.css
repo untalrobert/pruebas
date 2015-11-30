@@ -19,32 +19,28 @@
 }
 
 
-.menuEspe li a:hover{
-  
+.menuEspe li a:hover{  
   border-right: #fff;
   background: #FFCF00;
   border-bottom: 1px solid #064E06;
   color: #333;
-  font-size: 800;
   border-radius: 0px;
   font-size: 13px;
 }
 
 
 
-.menuEspe li a:focus{
-  
+.menuEspe li a:focus{  
   border-right: #fff;
   color: #fff;
   background: #337AB7;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 13px;
 }
 
 
 
-.menuEspe li a{
-  
+.menuEspe li a{  
   border-right: #fff;
   color: #fff;
   padding: 4px 1px 4px 1px;
@@ -63,8 +59,7 @@
   margin-right: 0px;
 }
 
-.respuesta .SiNo{
-  
+.respuesta .SiNo{  
   margin-right: 0px;
   vertical-align: baseline;
   margin-left: 8px;
@@ -73,8 +68,7 @@
 
 .estudiante .SiNo{ 
   margin-left: 8px;
-  padding-left: 30px;
-  
+  padding-left: 30px;  
 }
 
 .estudiante{
@@ -168,7 +162,7 @@
 }
 @media (max-width: 767px){
   .submenu{  
-  margin-bottom: 250px;
+    margin-bottom: 250px;
 }
 .menuEspe li:hover {
     background: #FFCF00;
@@ -184,8 +178,7 @@
 
 
 @media (max-width: 492px){
-  .submenu{
-  
+  .submenu{  
   margin-bottom: 204px;
 
 }
