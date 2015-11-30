@@ -47,11 +47,16 @@
  /* border-bottom: 2px solid #042D50;*/
 }
 
+.videoEvaluar{
+  position: fixed;
+  width: 43%;
+}
+
 
 /*Panel Evaluar Preguntas*/
 .paneles{
-    height: 28px;
-    padding: 3px;
+  height: 28px;
+  padding: 3px;
 }
 
 .respuesta{
@@ -99,6 +104,19 @@
   text-align: center;
 }
 
+
+@media (max-width: 1200px){
+
+.videoEvaluar{
+  position: relative;
+  width: 100%;
+}
+  
+ 
+  
+  
+}
+
 @media (max-width: 1165px){
   .submenu{  
   margin-bottom: 70px;
@@ -113,6 +131,7 @@
     background: #FFCF00;
     border: 1px solid #FFCF00;
 }
+
   
   
 }
@@ -143,9 +162,11 @@
   padding: 4px 1px 4px 1px;
   border-bottom: none;
 }
+
+
 }
 
-@media (max-width: 955px){
+@media (max-width: 991px){
   .submenu{  
   margin-bottom: 60px;
 }
@@ -156,6 +177,10 @@
 .menuEspe li a:hover {
     background: #FFCF00;
     border: 1px solid #FFCF00;
+}
+.videoEvaluar{
+  position: relative;
+  width: 100%;
 }
   
   
@@ -172,6 +197,12 @@
     background: #FFCF00;
     border: 0px solid #FFCF00;
 }
+
+.videoEvaluar{
+  position: relative;
+  width: 100%;
+}
+
   
   
 }
@@ -181,6 +212,10 @@
   .submenu{  
   margin-bottom: 204px;
 
+}
+.videoEvaluar{
+  position: relative;
+  width: 100%;
 }
   
   
