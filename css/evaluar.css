@@ -1,6 +1,6 @@
 
 .submenu{
-  font-size: 14px;
+  font-size: 13px;
   height: 10px;
   margin-bottom: 34px;
 
@@ -22,12 +22,12 @@
 .menuEspe li a:hover{
   
   border-right: #fff;
-  color: #fff;
   background: #FFCF00;
-  border-bottom: 2px solid #064E06;
+  border-bottom: 1px solid #064E06;
   color: #333;
   font-size: 800;
   border-radius: 0px;
+  font-size: 13px;
 }
 
 
@@ -38,6 +38,7 @@
   color: #fff;
   background: #337AB7;
   font-weight: 700;
+  font-size: 13px;
 }
 
 
@@ -107,10 +108,12 @@
 @media (max-width: 1165px){
   .submenu{  
   margin-bottom: 70px;
+  font-size: 13px;
 }
 .menuEspe li:hover {
     background: #FFCF00;
     border: 1px solid #FFCF00;
+    font-size: 13px;
 }
 .menuEspe li a:hover {
     background: #FFCF00;
