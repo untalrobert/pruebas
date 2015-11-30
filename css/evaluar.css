@@ -182,6 +182,10 @@
   position: relative;
   width: 100%;
 }
+
+.textNoti{
+  text-align: left;
+}
   
   
 }
