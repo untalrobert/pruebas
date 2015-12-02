@@ -757,6 +757,11 @@ form.signup input.form-control:focus {
     font-weight: 800;
 }
 
+.panelCamaro{
+  padding: 0px;
+  text-align: center;
+}
+
 /* Header */
 
 #header { 
