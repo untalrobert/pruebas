@@ -16,6 +16,9 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.9/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/1.0.7/css/responsive.bootstrap.min.css">
+
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
@@ -73,25 +76,20 @@
   <div class="panel-heading">ASIGNACIÓN DE VIDEOS</div>
   <div class="panel-body">
     <h4 style="font-size: 19px; text-align: -webkit-center; margin-top: -8px; padding-bottom: 12px; padding-top: 14px;">En caso de que esta lista no corresponda con sus registros, por favor comuníquese inmediatamente con  el productor encargado de su canal.</h4>
-    <div class="table-responsive">
- 
 
-
-     <table class="table table-bordered table-hover">
-    <thead>
-        <tr> 
-          
-          <th>ID evaluado</th>
-          <th>Municipio</th>
-          <th>Departamento</th>
-          <th>Institución Educativa</th> 
-          <th>Fecha cargue</th>                   
-          
+       <table id="example" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+        <thead>
+          <tr>            
+            <th>ID evaluado</th>
+            <th>Municipio</th>
+            <th>Departamento</th>
+            <th>Institución Educativa</th> 
+            <th>Fecha cargue</th>     
             <th>Estado de cargue</th>
             <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
+          </tr>
+      </thead>
+      <tbody>
         <tr>            
             <td>80186850</td>
             <td>Abejorral</td>
@@ -130,10 +128,9 @@
             </td>
         </tr>
           </tbody>
-
-           <tbody>
+          <tbody>
         <tr>            
-            <td>17636488</td>
+            <td>80186850</td>
             <td>Abejorral</td>
              <td>Antioquia</td>
              <td>Francisco jose de Caldas</td>
@@ -150,27 +147,653 @@
               
             </td>
            <td style="width: 228px;">
-              <div data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
-                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Envíar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
+              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
+                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
                   
                 </div>
 
                   
 
                 <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
-                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver" ><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
+                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
                   
                 </div>
                 
-                   <div  style="position:relative;float:right; width:70px">
-                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc" ><i class="fa fa-video-camera" style="color:#fff;"></i>
+                 <div  style="position:relative;float:right; width:70px">
+                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
                   
                 </div>
               </td>             
             </td>
         </tr>
           </tbody>
-       </table>
+          <tbody>
+        <tr>            
+            <td>80186850</td>
+            <td>Abejorral</td>
+             <td>Antioquia</td>
+             <td>Francisco jose de Caldas</td>
+             <td>25-12-2015</td>
+           
+            <td>
+               <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                       style="width: 40%">
+                    <span class="sr-only">40% completado (éxito)</span>
+                    </div>
+                  </div>
+              
+            </td>
+           <td style="width: 228px;">
+              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
+                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
+                  
+                </div>
+
+                  
+
+                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
+                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
+                  
+                </div>
+                
+                 <div  style="position:relative;float:right; width:70px">
+                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
+                  
+                </div>
+              </td>             
+            </td>
+        </tr>
+          </tbody>
+          <tbody>
+        <tr>            
+            <td>80186850</td>
+            <td>Abejorral</td>
+             <td>Antioquia</td>
+             <td>Francisco jose de Caldas</td>
+             <td>25-12-2015</td>
+           
+            <td>
+               <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                       style="width: 40%">
+                    <span class="sr-only">40% completado (éxito)</span>
+                    </div>
+                  </div>
+              
+            </td>
+           <td style="width: 228px;">
+              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
+                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
+                  
+                </div>
+
+                  
+
+                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
+                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
+                  
+                </div>
+                
+                 <div  style="position:relative;float:right; width:70px">
+                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
+                  
+                </div>
+              </td>             
+            </td>
+        </tr>
+          </tbody>
+          <tbody>
+        <tr>            
+            <td>80186850</td>
+            <td>Abejorral</td>
+             <td>Antioquia</td>
+             <td>Francisco jose de Caldas</td>
+             <td>25-12-2015</td>
+           
+            <td>
+               <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                       style="width: 40%">
+                    <span class="sr-only">40% completado (éxito)</span>
+                    </div>
+                  </div>
+              
+            </td>
+           <td style="width: 228px;">
+              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
+                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
+                  
+                </div>
+
+                  
+
+                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
+                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
+                  
+                </div>
+                
+                 <div  style="position:relative;float:right; width:70px">
+                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
+                  
+                </div>
+              </td>             
+            </td>
+        </tr>
+          </tbody>
+          <tbody>
+        <tr>            
+            <td>80186850</td>
+            <td>Abejorral</td>
+             <td>Antioquia</td>
+             <td>Francisco jose de Caldas</td>
+             <td>25-12-2015</td>
+           
+            <td>
+               <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                       style="width: 40%">
+                    <span class="sr-only">40% completado (éxito)</span>
+                    </div>
+                  </div>
+              
+            </td>
+           <td style="width: 228px;">
+              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
+                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
+                  
+                </div>
+
+                  
+
+                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
+                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
+                  
+                </div>
+                
+                 <div  style="position:relative;float:right; width:70px">
+                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
+                  
+                </div>
+              </td>             
+            </td>
+        </tr>
+          </tbody>
+          <tbody>
+        <tr>            
+            <td>80186850</td>
+            <td>Abejorral</td>
+             <td>Antioquia</td>
+             <td>Francisco jose de Caldas</td>
+             <td>25-12-2015</td>
+           
+            <td>
+               <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                       style="width: 40%">
+                    <span class="sr-only">40% completado (éxito)</span>
+                    </div>
+                  </div>
+              
+            </td>
+           <td style="width: 228px;">
+              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
+                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
+                  
+                </div>
+
+                  
+
+                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
+                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
+                  
+                </div>
+                
+                 <div  style="position:relative;float:right; width:70px">
+                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
+                  
+                </div>
+              </td>             
+            </td>
+        </tr>
+          </tbody>
+          <tbody>
+        <tr>            
+            <td>80186850</td>
+            <td>Abejorral</td>
+             <td>Antioquia</td>
+             <td>Francisco jose de Caldas</td>
+             <td>25-12-2015</td>
+           
+            <td>
+               <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                       style="width: 40%">
+                    <span class="sr-only">40% completado (éxito)</span>
+                    </div>
+                  </div>
+              
+            </td>
+           <td style="width: 228px;">
+              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
+                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
+                  
+                </div>
+
+                  
+
+                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
+                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
+                  
+                </div>
+                
+                 <div  style="position:relative;float:right; width:70px">
+                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
+                  
+                </div>
+              </td>             
+            </td>
+        </tr>
+          </tbody>
+          <tbody>
+        <tr>            
+            <td>80186850</td>
+            <td>Abejorral</td>
+             <td>Antioquia</td>
+             <td>Francisco jose de Caldas</td>
+             <td>25-12-2015</td>
+           
+            <td>
+               <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                       style="width: 40%">
+                    <span class="sr-only">40% completado (éxito)</span>
+                    </div>
+                  </div>
+              
+            </td>
+           <td style="width: 228px;">
+              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
+                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
+                  
+                </div>
+
+                  
+
+                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
+                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
+                  
+                </div>
+                
+                 <div  style="position:relative;float:right; width:70px">
+                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
+                  
+                </div>
+              </td>             
+            </td>
+        </tr>
+          </tbody>
+          <tbody>
+        <tr>            
+            <td>80186850</td>
+            <td>Abejorral</td>
+             <td>Antioquia</td>
+             <td>Francisco jose de Caldas</td>
+             <td>25-12-2015</td>
+           
+            <td>
+               <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                       style="width: 40%">
+                    <span class="sr-only">40% completado (éxito)</span>
+                    </div>
+                  </div>
+              
+            </td>
+           <td style="width: 228px;">
+              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
+                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
+                  
+                </div>
+
+                  
+
+                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
+                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
+                  
+                </div>
+                
+                 <div  style="position:relative;float:right; width:70px">
+                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
+                  
+                </div>
+              </td>             
+            </td>
+        </tr>
+          </tbody>
+          <tbody>
+        <tr>            
+            <td>80186850</td>
+            <td>Abejorral</td>
+             <td>Antioquia</td>
+             <td>Francisco jose de Caldas</td>
+             <td>25-12-2015</td>
+           
+            <td>
+               <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                       style="width: 40%">
+                    <span class="sr-only">40% completado (éxito)</span>
+                    </div>
+                  </div>
+              
+            </td>
+           <td style="width: 228px;">
+              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
+                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
+                  
+                </div>
+
+                  
+
+                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
+                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
+                  
+                </div>
+                
+                 <div  style="position:relative;float:right; width:70px">
+                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
+                  
+                </div>
+              </td>             
+            </td>
+        </tr>
+          </tbody>
+ 
+        <tbody>
+       <tbody>
+        <tr>            
+            <td>80186850</td>
+            <td>Abejorral</td>
+             <td>Antioquia</td>
+             <td>Francisco jose de Caldas</td>
+             <td>25-12-2015</td>
+           
+            <td>
+               <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                       style="width: 40%">
+                    <span class="sr-only">40% completado (éxito)</span>
+                    </div>
+                  </div>
+              
+            </td>
+           <td style="width: 228px;">
+              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
+                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
+                  
+                </div>
+
+                  
+
+                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
+                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
+                  
+                </div>
+                
+                 <div  style="position:relative;float:right; width:70px">
+                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
+                  
+                </div>
+              </td>             
+            </td>
+        </tr>
+          </tbody>
+          <tbody>
+        <tr>            
+            <td>80186850</td>
+            <td>Abejorral</td>
+             <td>Antioquia</td>
+             <td>Francisco jose de Caldas</td>
+             <td>25-12-2015</td>
+           
+            <td>
+               <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                       style="width: 40%">
+                    <span class="sr-only">40% completado (éxito)</span>
+                    </div>
+                  </div>
+              
+            </td>
+           <td style="width: 228px;">
+              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
+                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
+                  
+                </div>
+
+                  
+
+                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
+                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
+                  
+                </div>
+                
+                 <div  style="position:relative;float:right; width:70px">
+                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
+                  
+                </div>
+              </td>             
+            </td>
+        </tr>
+          </tbody>
+          <tbody>
+        <tr>            
+            <td>80186850</td>
+            <td>Abejorral</td>
+             <td>Antioquia</td>
+             <td>Francisco jose de Caldas</td>
+             <td>25-12-2015</td>
+           
+            <td>
+               <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                       style="width: 40%">
+                    <span class="sr-only">40% completado (éxito)</span>
+                    </div>
+                  </div>
+              
+            </td>
+           <td style="width: 228px;">
+              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
+                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
+                  
+                </div>
+
+                  
+
+                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
+                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
+                  
+                </div>
+                
+                 <div  style="position:relative;float:right; width:70px">
+                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
+                  
+                </div>
+              </td>             
+            </td>
+        </tr>
+          </tbody>
+          <tbody>
+        <tr>            
+            <td>80186850</td>
+            <td>Abejorral</td>
+             <td>Antioquia</td>
+             <td>Francisco jose de Caldas</td>
+             <td>25-12-2015</td>
+           
+            <td>
+               <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                       style="width: 40%">
+                    <span class="sr-only">40% completado (éxito)</span>
+                    </div>
+                  </div>
+              
+            </td>
+           <td style="width: 228px;">
+              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
+                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
+                  
+                </div>
+
+                  
+
+                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
+                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
+                  
+                </div>
+                
+                 <div  style="position:relative;float:right; width:70px">
+                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
+                  
+                </div>
+              </td>             
+            </td>
+        </tr>
+          </tbody>
+          <tbody>
+        <tr>            
+            <td>80186850</td>
+            <td>Abejorral</td>
+             <td>Antioquia</td>
+             <td>Francisco jose de Caldas</td>
+             <td>25-12-2015</td>
+           
+            <td>
+               <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                       style="width: 40%">
+                    <span class="sr-only">40% completado (éxito)</span>
+                    </div>
+                  </div>
+              
+            </td>
+           <td style="width: 228px;">
+              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
+                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
+                  
+                </div>
+
+                  
+
+                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
+                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
+                  
+                </div>
+                
+                 <div  style="position:relative;float:right; width:70px">
+                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
+                  
+                </div>
+              </td>             
+            </td>
+        </tr>
+          </tbody>
+          <tbody>
+        <tr>            
+            <td>80186850</td>
+            <td>Abejorral</td>
+             <td>Antioquia</td>
+             <td>Francisco jose de Caldas</td>
+             <td>25-12-2015</td>
+           
+            <td>
+               <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                       style="width: 40%">
+                    <span class="sr-only">40% completado (éxito)</span>
+                    </div>
+                  </div>
+              
+            </td>
+           <td style="width: 228px;">
+              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
+                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
+                  
+                </div>
+
+                  
+
+                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
+                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
+                  
+                </div>
+                
+                 <div  style="position:relative;float:right; width:70px">
+                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
+                  
+                </div>
+              </td>             
+            </td>
+        </tr>
+          </tbody>
+          <tbody>
+        <tr>            
+            <td>80186850</td>
+            <td>Abejorral</td>
+             <td>Antioquia</td>
+             <td>Francisco jose de Caldas</td>
+             <td>25-12-2015</td>
+           
+            <td>
+               <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                       style="width: 40%">
+                    <span class="sr-only">40% completado (éxito)</span>
+                    </div>
+                  </div>
+              
+            </td>
+           <td style="width: 228px;">
+              <div  data-toggle="modal" data-target="#myModalConf" style="position:relative;float:right; width:70px ">
+                           <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Enviar"><span class="btn btn-default btn-file btn-circle"><span class="fileinput-new"><i class="fa fa-paper-plane-o" style="color:#fff;"></i></span></a>   
+                  
+                </div>
+
+                  
+
+                <div data-toggle="modal" data-target="#myModalMap" style="position:relative;float:right; width:70px">
+                          <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Ver Video Adjuntado"><span class="btn btn-default btn-file btn-circle ver"><i class="fa fa-eye" style="color:#fff;"></i></span></span></a>                     
+                  
+                </div>
+                
+                 <div  style="position:relative;float:right; width:70px">
+                          <a href="adjuntar_video_camarografo.html" data-toggle="tooltip" data-placement="top" data-original-title="Adjuntar Video"><span class="btn btn-default btn-file btn-circle doc"><i class="fa fa-video-camera" style="color:#fff;"></i>
+                  
+                </div>
+              </td>             
+            </td>
+        </tr>
+          </tbody>
+    </table>
        </div>   
      </div>
   </div>
@@ -323,17 +946,31 @@
 </div>
 
 
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+     <script type="text/javascript" src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/1.10.9/js/dataTables.bootstrap.min.js"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/responsive/1.0.7/js/dataTables.responsive.min.js"></script>
     <script type="text/javascript">
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-});
-</script>
+     $(document).ready(function() {
+    $('#example').DataTable();} );
+    </script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+      });
+    </script>
+
+
+
 
 </body>
 </html>

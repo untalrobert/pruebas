@@ -2,7 +2,7 @@
 .submenu{
   font-size: 13px;
   height: 10px;
-  margin-bottom: 34px;
+  margin-bottom: 10px;
 
 }
 .menuEspe{
@@ -103,6 +103,11 @@
   margin-top: 8px;
   text-align: center;
 }
+.tituloEvaluar{
+  background: #FFF2F2;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
 
 
 @media (max-width: 1200px){
@@ -110,6 +115,7 @@
 .videoEvaluar{
   position: relative;
   width: 100%;
+
 }
   
  

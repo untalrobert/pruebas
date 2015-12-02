@@ -110,6 +110,12 @@
 
     <!-- Page Content -->
     <div class="container">
+      <div class="row tituloEvaluar">
+          <div class="col-xs-12">
+            <h2>Evaluar</h2>
+            <p>Este video es el primero en la cola de evaluación. Para continuar con el siguiente video debe finalizar la evaluación del video actual.</p>
+          </div>          
+      </div>
          <div class="row">
             <div class="col-md-6">
           <div class="panel panel-primary videoEvaluar" >
@@ -124,6 +130,7 @@
             </div>
           </div>
         </div>
+      </div>
 
 <div class="col-md-6">
   <div id="divocultamuestra" >
@@ -572,7 +579,7 @@ $(document).ready(function(){
 
     <script type="text/javascript">
   $(document).ready(function(){
-  // $('#divocultamuestra').hide()
+  $('#divocultamuestra').hide()
    $("#botonocultamuestra").click(function () {
       $("#divocultamuestra").each(function() {
         displaying = $(this).css("display");

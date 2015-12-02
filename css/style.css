@@ -309,6 +309,15 @@ textarea.form-control{
   font-weight: 400;
 }
 
+.mano{
+  background: #D9EDF7;
+}
+.mano:hover{
+  background: #95C0D6;
+}
+.informacion{
+  text-align: right;
+}
 
 /* footer */
 #footer {
@@ -824,9 +833,14 @@ h2.subtitle {
 
 /* video */
 .video-container{
-    margin-top: 20%;
+    margin-top: 0%;
     margin-left:0px;
+    text-align: -webkit-center;
 
+}
+.banner{
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .new_persona{
