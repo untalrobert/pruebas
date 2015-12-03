@@ -48,8 +48,8 @@
 }
 
 .videoEvaluar{
-  position: fixed;
-  width: 43%;
+  /*position: fixed;*/
+ /* width: 43%;*/
 }
 
 
@@ -112,11 +112,7 @@
 
 @media (max-width: 1200px){
 
-.videoEvaluar{
-  position: relative;
-  width: 100%;
 
-}
   
  
   
@@ -184,10 +180,6 @@
     background: #FFCF00;
     border: 1px solid #FFCF00;
 }
-.videoEvaluar{
-  position: relative;
-  width: 100%;
-}
 
 .textNoti{
   text-align: left;
@@ -208,10 +200,6 @@
     border: 0px solid #FFCF00;
 }
 
-.videoEvaluar{
-  position: relative;
-  width: 100%;
-}
 
   
   
@@ -223,10 +211,6 @@
   margin-bottom: 204px;
 
 }
-.videoEvaluar{
-  position: relative;
-  width: 100%;
-}
-  
+
   
 }
