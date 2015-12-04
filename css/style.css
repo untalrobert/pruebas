@@ -1015,6 +1015,7 @@ p.copyright {
 .estadisticas{
   margin-bottom: 10px;
   margin-top: 2px;
+  text-align: left;
   
 }
 
@@ -1022,17 +1023,19 @@ p.copyright {
   padding-left: 6px;
   color: #333;
   text-decoration: none;
+
 }
 .estadisticasNur{
   background: #FFCF00;
   padding: 3px;
   border-top-right-radius: 10px;
+  margin-top: 0px;
 }
 
 .estadisticasNur span{
   background: #00B0E4;
   font-size: 15px;
-  margin-left: 7px;
+  margin-left: 41px;
 }
 .terminadas {
  
