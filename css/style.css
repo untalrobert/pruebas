@@ -1011,6 +1011,28 @@ p.copyright {
       
 }
 
+/*ESTADISTICAS*/
+.estadisticas{
+  margin-bottom: 20px;
+  margin-top: 11px;
+}
+
+.estadisticas a{
+  padding-left: 6px;
+  color: #333;
+  text-decoration: none;
+}
+.estadisticasNur{
+  background: #FFCF00;
+  padding: 6px;
+  border-top-right-radius: 10px;
+}
+
+.estadisticasNur span{
+  background: #00B0E4;
+  font-size: 15px;
+}
+
 
 
 

@@ -126,15 +126,26 @@
         </div>
 
 <div class="col-md-6">
-  <div id="divocultamuestra" >
+  <div id="divocultamuestra">
   <div class="panel panel-primary">
   <div class="panel-heading paneles">Tabla de Correción</div>
    <div id="main">              
-     <input type="button" class="btn btn-success btn-xs " id="btAdd" value="Agregar Actividad" class="bt" />
-     <input type="button" class="btn btn-danger btn-xs" id="btRemove" value="Quitar Actividad" class="bt" /><br />
+     <input type="button" class="btn btn-success btn-xs " id="actividad1"  value="Agregar Actividad" class="bt" />
+     <input type="button" class="btn btn-danger btn-xs" id="actividad1" value="Quitar Actividad" class="bt" /><br />
        </div>       
-  <div class="panel-body contenidosPregun">        
-    <table class="table table-condensed table-bordered preguntasEval">     
+  <div class="panel-body contenidosPregun">
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title" style="color: #fff;">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Actividad #1
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <table class="table table-condensed table-bordered preguntasEval">     
     <thead>
       <h4>ACTIVIDADES DEL DOCENTE</h4>
       <p>Indique si el docente realizó las siguientes actividades durante este periodo de tiempo 
@@ -198,9 +209,6 @@
     </tbody>
 </table>
 
-
-
-<!-- ACTIVIDADES DEL ESTUDIANTE -->
 
 <table class="table table-condensed responsive table-bordered preguntasEval">
     <thead>
@@ -315,6 +323,388 @@
         </tr>
     </tbody>
 </table>
+
+      </div>
+    </div>
+  </div>
+  <div id="actividad2">
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title" style="color: #fff;">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Actividad #2
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <table class="table table-condensed table-bordered preguntasEval">     
+    <thead>
+      <h4>ACTIVIDADES DEL DOCENTE</h4>
+      <p>Indique si el docente realizó las siguientes actividades durante este periodo de tiempo 
+         (Por favor, seleccione una opción por cada fila.)</p>
+        <tr>
+            <th>#</th>
+            <th>Preguntas Actividad 1</th>            
+            <th>Respuestas </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.</td>         
+            <td class="preguntaCorre">Fulana no muchas de percal yo antojo</td>
+            <td class="respuesta">
+                <label class="radio-inline SiNo ">
+                 <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Si
+                 </label>
+                <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+                </label>
+               
+            </td>
+        </tr>
+        <tr>
+            <td>2.</td>         
+            <td class="preguntaCorre">Subia selva ruina chi llamo oir campo llego ola</td>
+            <td class="respuesta">
+              <label class="radio-inline SiNo">
+                 <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Si
+                 </label>
+                <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>3.</td>        
+            <td class="preguntaCorre">Canto oh el epoca atras ni</td>
+            <td class="respuesta">
+              <label class="radio-inline SiNo">
+                 <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Si
+                 </label>
+                <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>4.</td>        
+            <td class="preguntaCorre">Anteriores la orgullosos su misioneros tentandole estimarlos ventajosos va.</td>
+            <td class="respuesta">
+              <label class="radio-inline SiNo">
+                 <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Si
+                 </label>
+                <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+                </label>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table class="table table-condensed responsive table-bordered preguntasEval">
+    <thead>
+      <h4>ACTIVIDADES DE LOS ESTUDIANTES</h4>
+      <p>Indique la cantidad de estudiantes que observó realizando las siguientes actividades durante este periodo de tiempo. (Por favor, seleccione una opción por cada fila.)</p>
+        <tr>
+            <th>#</th>
+            <th>Preguntas Actividad 1</th>            
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.</td>         
+            <td class="preguntaCorre">Zaga uno fija aca pano ama hoy <br>
+              <div class="row">
+                <div class="col-xs-6 estudiante"> 
+                  <label class="radio-inline SiNo ">
+                     <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Ninguno
+                     </label>
+                    <label class="radio-inline SiNo">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 1 estudiantes
+                    </label>
+              </div>
+                <div class="col-xs-6 estudiante">
+                  <label class="radio-inline SiNo">
+                   <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2 a 6 estudiantes
+                   </label>
+                   <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Más de 6 estudiantes
+                </label>
+                </div>
+              </div>
+               
+            </td>
+            
+        </tr>
+        <tr>
+            <td>2.</td>         
+            <td class="preguntaCorre">Hermoso llamaba no el puestos ha su mandaba<br>
+              <div class="row">
+                <div class="col-xs-6 estudiante"> 
+                  <label class="radio-inline SiNo ">
+                     <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Ninguno
+                     </label>
+                    <label class="radio-inline SiNo">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 1 estudiantes
+                    </label>
+              </div>
+                <div class="col-xs-6 ">
+                  <label class="radio-inline SiNo">
+                   <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2 a 6 estudiantes
+                   </label>
+                   <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Más de 6 estudiantes
+                </label>
+                </div>
+              </div>
+               
+            </td>
+            
+        </tr>
+        <tr>
+            <td>3.</td>        
+            <td class="preguntaCorre">Sano un so echo yo sola<br>
+              <div class="row">
+                <div class="col-xs-6 estudiante"> 
+                  <label class="radio-inline SiNo ">
+                     <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Ninguno
+                     </label>
+                    <label class="radio-inline SiNo">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 1 estudiantes
+                    </label>
+              </div>
+                <div class="col-xs-6 ">
+                  <label class="radio-inline SiNo">
+                   <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2 a 6 estudiantes
+                   </label>
+                   <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Más de 6 estudiantes
+                </label>
+                </div>
+              </div>
+               
+            </td>
+            
+        </tr>
+        <tr>
+            <td>4.</td>        
+            <td class="preguntaCorre">De napolitana animandose no un creyendolo tu  <br>
+              <div class="row">
+                <div class="col-xs-6 estudiante"> 
+                  <label class="radio-inline SiNo ">
+                     <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Ninguno
+                     </label>
+                    <label class="radio-inline SiNo">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 1 estudiantes
+                    </label>
+              </div>
+                <div class="col-xs-6 ">
+                  <label class="radio-inline SiNo">
+                   <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2 a 6 estudiantes
+                   </label>
+                   <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Más de 6 estudiantes
+                </label>
+                </div>
+              </div>
+               
+            </td>
+            
+        </tr>
+    </tbody>
+</table>
+
+      </div>
+    </div>
+  </div>
+  </div>
+</div> 
+   
+    <!-- <table class="table table-condensed table-bordered preguntasEval">     
+    <thead>
+      <h4>ACTIVIDADES DEL DOCENTE</h4>
+      <p>Indique si el docente realizó las siguientes actividades durante este periodo de tiempo 
+         (Por favor, seleccione una opción por cada fila.)</p>
+        <tr>
+            <th>#</th>
+            <th>Preguntas Actividad 1</th>            
+            <th>Respuestas </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.</td>         
+            <td class="preguntaCorre">Fulana no muchas de percal yo antojo</td>
+            <td class="respuesta">
+                <label class="radio-inline SiNo ">
+                 <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Si
+                 </label>
+                <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+                </label>
+               
+            </td>
+        </tr>
+        <tr>
+            <td>2.</td>         
+            <td class="preguntaCorre">Subia selva ruina chi llamo oir campo llego ola</td>
+            <td class="respuesta">
+              <label class="radio-inline SiNo">
+                 <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Si
+                 </label>
+                <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>3.</td>        
+            <td class="preguntaCorre">Canto oh el epoca atras ni</td>
+            <td class="respuesta">
+              <label class="radio-inline SiNo">
+                 <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Si
+                 </label>
+                <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>4.</td>        
+            <td class="preguntaCorre">Anteriores la orgullosos su misioneros tentandole estimarlos ventajosos va.</td>
+            <td class="respuesta">
+              <label class="radio-inline SiNo">
+                 <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Si
+                 </label>
+                <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+                </label>
+            </td>
+        </tr>
+    </tbody>
+</table>
+ -->
+
+
+<!-- ACTIVIDADES DEL ESTUDIANTE -->
+
+<!-- <table class="table table-condensed responsive table-bordered preguntasEval">
+    <thead>
+      <h4>ACTIVIDADES DE LOS ESTUDIANTES</h4>
+      <p>Indique la cantidad de estudiantes que observó realizando las siguientes actividades durante este periodo de tiempo. (Por favor, seleccione una opción por cada fila.)</p>
+        <tr>
+            <th>#</th>
+            <th>Preguntas Actividad 1</th>            
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.</td>         
+            <td class="preguntaCorre">Zaga uno fija aca pano ama hoy <br>
+              <div class="row">
+                <div class="col-xs-6 estudiante"> 
+                  <label class="radio-inline SiNo ">
+                     <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Ninguno
+                     </label>
+                    <label class="radio-inline SiNo">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 1 estudiantes
+                    </label>
+              </div>
+                <div class="col-xs-6 estudiante">
+                  <label class="radio-inline SiNo">
+                   <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2 a 6 estudiantes
+                   </label>
+                   <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Más de 6 estudiantes
+                </label>
+                </div>
+              </div>
+               
+            </td>
+            
+        </tr>
+        <tr>
+            <td>2.</td>         
+            <td class="preguntaCorre">Hermoso llamaba no el puestos ha su mandaba<br>
+              <div class="row">
+                <div class="col-xs-6 estudiante"> 
+                  <label class="radio-inline SiNo ">
+                     <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Ninguno
+                     </label>
+                    <label class="radio-inline SiNo">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 1 estudiantes
+                    </label>
+              </div>
+                <div class="col-xs-6 ">
+                  <label class="radio-inline SiNo">
+                   <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2 a 6 estudiantes
+                   </label>
+                   <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Más de 6 estudiantes
+                </label>
+                </div>
+              </div>
+               
+            </td>
+            
+        </tr>
+        <tr>
+            <td>3.</td>        
+            <td class="preguntaCorre">Sano un so echo yo sola<br>
+              <div class="row">
+                <div class="col-xs-6 estudiante"> 
+                  <label class="radio-inline SiNo ">
+                     <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Ninguno
+                     </label>
+                    <label class="radio-inline SiNo">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 1 estudiantes
+                    </label>
+              </div>
+                <div class="col-xs-6 ">
+                  <label class="radio-inline SiNo">
+                   <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2 a 6 estudiantes
+                   </label>
+                   <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Más de 6 estudiantes
+                </label>
+                </div>
+              </div>
+               
+            </td>
+            
+        </tr>
+        <tr>
+            <td>4.</td>        
+            <td class="preguntaCorre">De napolitana animandose no un creyendolo tu  <br>
+              <div class="row">
+                <div class="col-xs-6 estudiante"> 
+                  <label class="radio-inline SiNo ">
+                     <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Ninguno
+                     </label>
+                    <label class="radio-inline SiNo">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 1 estudiantes
+                    </label>
+              </div>
+                <div class="col-xs-6 ">
+                  <label class="radio-inline SiNo">
+                   <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2 a 6 estudiantes
+                   </label>
+                   <label class="radio-inline SiNo">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Más de 6 estudiantes
+                </label>
+                </div>
+              </div>
+               
+            </td>
+            
+        </tr>
+    </tbody>
+</table> -->
 <!-- FIN ACTIVIDADES DEL ESTUDIANTE -->
     
 
@@ -590,72 +980,28 @@ $(document).ready(function(){
   });
   </script>
 
-
-<script>$(document).ready(function() {
-        var iCnt = 0;
-
-// Crear un elemento div añadiendo estilos CSS
-        var container = $(document.createElement('div')).css({
-            padding: '5px', margin: '5px', width: '100%', 
-            borderTopColor: '#999', borderBottomColor: '#999',
-            borderLeftColor: '#999', borderRightColor: '#999'
-        });
-
-        $('#btAdd').click(function() {
-            if (iCnt <= 8) {
-
-                iCnt = iCnt + 1;
-
-                // Añadir caja de texto.
-                $(container).append('<input type=text class="form-control"  id=tb' + iCnt + ' ' +
-                            'placeholder="Agregar Tablas ' + '" />');
-
-                
-
-                if (iCnt == 1) {   
-
- var divSubmit = $(document.createElement('div'));
-                    $(divSubmit).append( + 
-                            'id=btSubmit  />');
-
-                }
-
- $('#main').after(container, divSubmit); 
-            }
-            else {    //se establece un limite para añadir elementos, 10 es el limite
-                
-                $(container).append('<label>Limite Alcanzado</label>'); 
-                $('#btAdd').attr('class', 'bt-disable'); 
-                $('#btAdd').attr('disabled', 'disabled');
-
-            }
-        });
-
-        $('#btRemove').click(function() {   // Elimina un elemento por click
-            if (iCnt != 0) { $('#tb' + iCnt).remove(); iCnt = iCnt - 1; }
-        
-            if (iCnt == 0) { $(container).empty(); 
-        
-                $(container).remove(); 
-                $('#btSubmit').remove(); 
-                $('#btAdd').removeAttr('disabled'); 
-                $('#btAdd').attr('class', 'bt') 
-
-            }
-        });
-
-        $('#btRemoveAll').click(function() {    // Elimina todos los elementos del contenedor
-        
-            $(container).empty(); 
-            $(container).remove(); 
-            $('#btSubmit').remove(); iCnt = 0; 
-            $('#btAdd').removeAttr('disabled'); 
-            $('#btAdd').attr('class', 'bt');
-
-        });
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('#actividad2').hide()
+     $("#actividad1").click(function () {
+      $("#actividad2").each(function() {
+        displaying = $(this).css("display");
+        if(displaying == "block") {
+          $(this).fadeOut('slow',function() {
+           $(this).css("display","none");
+          });
+        } else {
+          $(this).fadeIn('slow',function() {
+            $(this).css("display","block");
+          });
+        }
+      });
     });
-
+  });
   </script>
+
+
+
     
 </body>
 
