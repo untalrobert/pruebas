@@ -123,9 +123,17 @@
               <a data-toggle="tooltip" data-placement="bottom" title="Corresponde a la totalidad de evaluaciones que fueron asignadas a pares evaluadores">Total Evaluaciones Asignadas<span class="badge">50</span></a>
               <a class="terminadas" data-toggle="tooltip" data-placement="bottom" title="Corresponde a la totalidad de evaluaciones realizadas por pares evaluadores">Evaluaciones Finalizadas<span class="badge">20</span></a>
           </div>
+          <div class="row">
+          <div class="col-lg-4">
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Buscar</button>
+              </span>
+              <input id="filtrar" type="text" class="form-control" placeholder="Ingrese el Numero de Documento">
+            </div><!-- /input-group -->
          
         </div>
-          <div class="row">
+          <div class="row evaluadoresTabla">
             <div class="col-xs-12">
               <div class="table-responsive" style="margin-top: 10px; margin-bottom: 20px;">
                 <table class="table table-bordered table-hover"> 
@@ -142,18 +150,64 @@
                       <th>Evaluaciones Pendientes</th>                 
                     </tr>
                   </thead>
-                  <tbody>
+                   <tbody id="myTable" class="buscar">
+               
                     <tr>
-                      <td>80186850</td>
+                      <td>801235486850</td>
+                      <td>100</td>
+                      <td>300</td>
+                      <td>200</td>    
+                    </tr>      
+                
+                    <tr>
+                      <td>801324586850</td>
                       <td>100</td>
                       <td>300</td>
                       <td>200</td>    
                     </tr>           
+                  
+                    <tr>
+                      <td>801234586850</td>
+                      <td>100</td>
+                      <td>300</td>
+                      <td>200</td>    
+                    </tr>          
                 
+                    <tr>
+                      <td>801832456850</td>
+                      <td>100</td>
+                      <td>300</td>
+                      <td>200</td>    
+                    </tr>                  
+                
+                    <tr>
+                      <td>8018685023</td>
+                      <td>100</td>
+                      <td>300</td>
+                      <td>200</td>    
+                    </tr>            
+                
+                    <tr>
+                      <td>80186853</td>
+                      <td>100</td>
+                      <td>300</td>
+                      <td>200</td>    
+                    </tr>        
                      
+                
+                    <tr>
+                      <td>80186855</td>
+                      <td>100</td>
+                      <td>300</td>
+                      <td>200</td>    
+                    </tr>                    
                   </tbody>
                 </table>
               </div>
+              <div class="col-md-12 text-center">
+              <ul class="pagination pagination-sm pager" id="myPager">        
+              </ul>
+            </div>
             </div>
           </div>
         </div>
@@ -286,6 +340,138 @@
     $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })</script>
+
+
+<script >$.fn.pageMe = function(opts){
+    var $this = this,
+        defaults = {
+            perPage: 7,
+            showPrevNext: false,
+            hidePageNumbers: false
+        },
+        settings = $.extend(defaults, opts);
+    
+    var listElement = $this;
+    var perPage = settings.perPage; 
+    var children = listElement.children();
+    var pager = $('.pager');
+    
+    if (typeof settings.childSelector!="undefined") {
+        children = listElement.find(settings.childSelector);
+    }
+    
+    if (typeof settings.pagerSelector!="undefined") {
+        pager = $(settings.pagerSelector);
+    }
+    
+    var numItems = children.size();
+    var numPages = Math.ceil(numItems/perPage);
+
+    pager.data("curr",0);
+    
+    if (settings.showPrevNext){
+        $('<li><a href="#" class="prev_link">«</a></li>').appendTo(pager);
+    }
+    
+    var curr = 0;
+    while(numPages > curr && (settings.hidePageNumbers==false)){
+        $('<li><a href="#" class="page_link">'+(curr+1)+'</a></li>').appendTo(pager);
+        curr++;
+    }
+    
+    if (settings.showPrevNext){
+        $('<li><a href="#" class="next_link">»</a></li>').appendTo(pager);
+    }
+    
+    pager.find('.page_link:first').addClass('active');
+    pager.find('.prev_link').hide();
+    if (numPages<=1) {
+        pager.find('.next_link').hide();
+    }
+    pager.children().eq(1).addClass("active");
+    
+    children.hide();
+    children.slice(0, perPage).show();
+    
+    pager.find('li .page_link').click(function(){
+        var clickedPage = $(this).html().valueOf()-1;
+        goTo(clickedPage,perPage);
+        return false;
+    });
+    pager.find('li .prev_link').click(function(){
+        previous();
+        return false;
+    });
+    pager.find('li .next_link').click(function(){
+        next();
+        return false;
+    });
+    
+    function previous(){
+        var goToPage = parseInt(pager.data("curr")) - 1;
+        goTo(goToPage);
+    }
+     
+    function next(){
+        goToPage = parseInt(pager.data("curr")) + 1;
+        goTo(goToPage);
+    }
+    
+    function goTo(page){
+        var startAt = page * perPage,
+            endOn = startAt + perPage;
+        
+        children.css('display','none').slice(startAt, endOn).show();
+        
+        if (page>=1) {
+            pager.find('.prev_link').show();
+        }
+        else {
+            pager.find('.prev_link').hide();
+        }
+        
+        if (page<(numPages-1)) {
+            pager.find('.next_link').show();
+        }
+        else {
+            pager.find('.next_link').hide();
+        }
+        
+        pager.data("curr",page);
+        pager.children().removeClass("active");
+        pager.children().eq(page+1).addClass("active");
+    
+    }
+};
+
+$(document).ready(function(){
+    
+  $('#myTable').pageMe({pagerSelector:'#myPager',showPrevNext:true,hidePageNumbers:false,perPage:4});
+    
+});</script>
+
+
+<!-- BUSCAR -->
+
+<script type="text/javascript">
+$(document).ready(function () {
+ 
+            (function ($) {
+ 
+                $('#filtrar').keyup(function () {
+ 
+                    var rex = new RegExp($(this).val(), 'i');
+                    $('.buscar tr').hide();
+                    $('.buscar tr').filter(function () {
+                        return rex.test($(this).text());
+                    }).show();
+ 
+                })
+ 
+            }(jQuery));
+ 
+        });
+</script>
 
 
 </body>

@@ -1037,8 +1037,7 @@ p.copyright {
   font-size: 15px;
   margin-left: 41px;
 }
-.terminadas {
- 
+.terminadas { 
   font-size: 15px;
   margin-left: 25px;
 
@@ -1048,9 +1047,7 @@ p.copyright {
   font-size: 15px;
   margin-left: 5px;
   border-left: 2px solid #ddd;
-
 }
-
 
 /*EVALUADOS*/
 
@@ -1058,7 +1055,7 @@ p.copyright {
   padding-top: 8px;
 }
 
-
-
-
-
+.evaluadoresTabla{
+  margin-right: 0px;
+  margin-left: 0px;
+}
