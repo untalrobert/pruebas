@@ -150,21 +150,19 @@
                       <th>Evaluaciones Pendientes</th>                 
                     </tr>
                   </thead>
-                   <tbody id="myTable" class="buscar">
-               
+                   <tbody id="myTable" class="buscar">               
                     <tr>
                       <td>801235486850</td>
                       <td>100</td>
                       <td>300</td>
                       <td>200</td>    
-                    </tr>      
-                
+                    </tr>               
                     <tr>
                       <td>801324586850</td>
                       <td>100</td>
                       <td>300</td>
                       <td>200</td>    
-                    </tr>           
+                    </tr>    
                   
                     <tr>
                       <td>801234586850</td>
@@ -467,12 +465,9 @@ $(document).ready(function () {
                     $('.buscar tr').hide();
                     $('.buscar tr').filter(function () {
                         return rex.test($(this).text());
-                    }).show();
- 
-                })
- 
-            }(jQuery));
- 
+                    }).show(); 
+                }) 
+            }(jQuery)); 
         });
 </script>
 
