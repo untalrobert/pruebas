@@ -67,12 +67,15 @@
     <div class="container">
          <div class="row">        
           <div class="panel panel-primary">
-  <div class="panel-heading">VIDEOS</div>
+  <div class="panel-heading">Revisor de Videos</div>
   <div class="panel-body"> 
 
-      <div class="table-responsive" style="height:200px;">
+      <div class="table-responsive" style="height: 170px;">
         <table class="table table-bordered table-hover">
           <thead>
+            <tr>
+              <th colspan="5" class="text-center" style="background: #3182CE;">Autograbación</th>
+            </tr> 
             <tr>              
               <th>Aprovados</th>
               <th>Revisados</th>
@@ -137,9 +140,12 @@
    <!--    PANEL 2  -->
 
 
-      <div class="table-responsive" style="height:200px;">
+      <div class="table-responsive" style="height:180px;">
         <table class="table table-bordered table-hover">
           <thead>
+            <tr>
+              <th colspan="5" class="text-center" style="background: #3182CE;">Camarógrafo</th>
+            </tr>
             <tr>              
               <th>Aprovados</th>
               <th>Revisados</th>
@@ -296,7 +302,13 @@
                 <!-- Radio Button -->                
             </li>             
                        
-            </ul>                       
+            </ul>
+             <div class="form-group" style="margin-top: 10px;">
+              <label for="comment"></label>
+              <textarea class="form-control" id="comment" maxlength="200" rows="5" placeholder="máximo 200" id="comment"></textarea>
+           
+
+            </div>                       
           </div>          
         </div>  
        
@@ -387,6 +399,22 @@ $(document).ready(function(){
     });
   });
   </script>
+
+  <script type="text/javascript">
+$(document).ready(function(){
+
+    var max_chars = 200;
+
+    $('#max').html(max_chars);
+
+    $('#comment').keyup(function() {
+        var chars = $(this).val().length;
+        var diff = max_chars - chars;
+        $('#contador').html(diff);   
+    });
+});
+
+</script>
 
 </body>
 </html>
