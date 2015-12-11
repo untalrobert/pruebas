@@ -94,14 +94,9 @@
             <input type="button" class="btn btn-success  btn-sm eval" id="botonocultamuestra" value="Evaluar" style="font-size:13px;cursor:pointer;margin:1px;padding:5px;"/>
           </div>
         </div>             
-      </div>  
-     </div>
-  </div>  
-</div>
-    </div>
-    <!-- /.container -->
+      </div>
 
-     <div class="container">
+       <div class="container">
          <div id="divocultamuestra" >
             <div class="col-md-6">
           <div class="panel panel-primary" >
@@ -133,6 +128,87 @@
 </div>   
 </div>
     </div>
+
+    <hr class="separador">
+
+
+   <!--    PANEL 2  -->
+
+
+      <div class="table-responsive" style="height:200px;">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>Videos por revisar</th>
+              <th>Aprovados</th>
+              <th style="width: 410px;">Video Evaluados</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+              <td>Evaluaciones Pendientes</td>
+              <td>21</td>             
+            </tr>
+            <tr>
+              <td>evaluaciones Terminadas</td>
+              <td>1</td>                          
+            </tr>           
+          </tbody>
+        </table>
+        <div class="row evaluarRevi">
+          <div class="col-md-6 col-md-offset-3">
+            <input type="button" class="btn btn-success  btn-sm eval" id="botonocultamuestra2" value="Evaluar" style="font-size:13px;cursor:pointer;margin:1px;padding:5px;"/>
+          </div>
+        </div>             
+      </div>
+      <div class="container">
+         <div id="divocultamuestra1" >
+            <div class="col-md-6">
+          <div class="panel panel-primary" >
+      <div class="panel-heading">Video a Evaluar</div>
+    <div class="panel-body">
+    <table >
+       <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/1QG2RMApZN4" frameborder="0" allowfullscreen></iframe>
+        </div>    
+           <button style="margin-top: 6px; float: right;" data-toggle="modal" data-target="#modalConfirmacionRev"type="button" class="btn btn-success btn-xs eval">Reportar Video</button>  
+      </table>    
+  </div>
+</div>
+</div>
+
+<div class="col-md-6">
+          <div class="panel panel-primary">
+  <div class="panel-heading">Revisión de Video</div>
+  <div class="panel-body">
+    <table class="table table-bordered table-hover">
+     <tbody>       
+        <tr>
+          <td><button style="margin-top: 1px; float: center;" data-toggle="modal" data-target="#myModalEntregarEvalu"type="button" class="btn btn-success btn-sm eval">Aprobar Video e ir al Siguiente</button></td>          
+        </tr>        
+      </tbody>
+      </table>    
+    </div>
+  </div>
+</div>   
+</div>
+    </div>
+
+
+     </div>
+  </div>  
+</div>
+    </div>
+    <!-- /.container -->
+
+    
+
+
+  
+
+
+
+
 
 
 
@@ -274,6 +350,26 @@ $(document).ready(function(){
   $('#divocultamuestra').hide()
    $("#botonocultamuestra").click(function () {
       $("#divocultamuestra").each(function() {
+        displaying = $(this).css("display");
+        if(displaying == "block") {
+          $(this).fadeOut('slow',function() {
+           $(this).css("display","none");
+          });
+        } else {
+          $(this).fadeIn('slow',function() {
+            $(this).css("display","block");
+          });
+        }
+      });
+    });
+  });
+  </script>
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+  $('#divocultamuestra1').hide()
+   $("#botonocultamuestra2").click(function () {
+      $("#divocultamuestra1").each(function() {
         displaying = $(this).css("display");
         if(displaying == "block") {
           $(this).fadeOut('slow',function() {
