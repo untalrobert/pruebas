@@ -617,11 +617,14 @@ input[readonly] {
 }
 
 .envioValidacion{
-  background: #1B6C7C;
+  background: #4A4A4A;
   height: 70px;
   margin-bottom: 20px;
   margin-top: 9px;
   padding-left: 20px;
+  webkit-box-shadow: 0 8px 6px -6px black;
+     -moz-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
 }
 
 .btnEvaluacion{
@@ -629,9 +632,9 @@ input[readonly] {
   text-align: -webkit-center;
 }
 .envioEvaluar{
-  background: #ff4842;
+  background: #5CB854;
   border-color: transparent;
-  border-bottom: 4px solid #e10700;
+  border-bottom: 4px solid #1B6315;
 }
 .envioEvaluar:hover{
   background: #e10700;
@@ -649,7 +652,7 @@ input[readonly] {
   font-size: 13px;
   padding: 2px;
   text-align: justify;
-  margin-top: 14px;
+  margin-top: 15px;
 }
 
 
