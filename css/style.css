@@ -616,6 +616,46 @@ input[readonly] {
   margin-right: 10px;
 }
 
+.envioValidacion{
+  background: #1B6C7C;
+  height: 70px;
+  margin-bottom: 20px;
+  margin-top: 9px;
+  padding-left: 20px;
+}
+
+.btnEvaluacion{
+  margin-top: 19px;
+  text-align: -webkit-center;
+}
+.envioEvaluar{
+  background: #ff4842;
+  border-color: transparent;
+  border-bottom: 4px solid #e10700;
+}
+.envioEvaluar:hover{
+  background: #e10700;
+  border-color: red;
+  border-bottom: 4px solid #e10700;  
+}
+.envioEvaluar:focus{
+  background: #e10700;
+  border-color: red;
+  border-bottom: 4px solid #e10700;  
+}
+
+.envioValidacion p{
+  color: #fff;
+  font-size: 13px;
+  padding: 2px;
+  text-align: justify;
+  margin-top: 14px;
+}
+
+
+
+
+
 /*VENTANA MODAL*/
 .panel-default>.panel-heading{
   background-color: #337AB7;
@@ -1060,3 +1100,5 @@ p.copyright {
   margin-right: 0px;
   margin-left: 0px;
 }
+
+
