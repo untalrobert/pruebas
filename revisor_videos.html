@@ -96,7 +96,8 @@
         </table>
         <div class="row evaluarRevi">
           <div class="col-md-6 col-md-offset-3">
-            <input type="button" class="btn btn-success  btn-sm eval" id="botonocultamuestra" value="Evaluar" style="font-size:13px;cursor:pointer;margin:1px;padding:5px;"/>
+             <button type="button" class="btn btn-success eval" id="botonocultamuestra">Evaluar</button>
+           
           </div>
         </div>             
       </div>
@@ -166,11 +167,12 @@
         </table>
         <div class="row evaluarRevi">
           <div class="col-md-6 col-md-offset-3">
-            <input type="button" class="btn btn-success  btn-sm eval" id="botonocultamuestra2" value="Evaluar" style="font-size:13px;cursor:pointer;margin:1px;padding:5px;"/>
-          </div>
+            <button type="button" class="btn btn-success eval" id="success">Evaluar</button>
+          </div>          
         </div>             
       </div>
       <div class="container">
+        <div id="message"></div>
          <div id="divocultamuestra1" >
             <div class="col-md-6">
           <div class="panel panel-primary" >
@@ -345,6 +347,8 @@
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/js/bootstrap-alert.js"></script>
+
     <script type="text/javascript">
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
@@ -392,20 +396,15 @@ $(document).ready(function(){
   </script>
 
   <script type="text/javascript">
-$(document).ready(function(){
-
-    var max_chars = 200;
-
-    $('#max').html(max_chars);
-
-    $('#comment').keyup(function() {
-        var chars = $(this).val().length;
-        var diff = max_chars - chars;
-        $('#contador').html(diff);   
-    });
+$(document).ready(function () {
+$('#success').click(function (e) {
+  e.preventDefault()
+  $('#message').html('<div style="width: 98%;"class="alert alert-success fade in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button>No tienes evaluaciones pendientes</div>');
+})
 });
-
 </script>
+
+
 
 </body>
 </html>

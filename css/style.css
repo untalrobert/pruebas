@@ -646,7 +646,8 @@ input[readonly] {
 .envioEvaluar:focus{
   background: #E06662;
   border-color: red;
-  border-bottom: 4px solid #CA3B36;  
+  border-bottom: 4px solid #CA3B36;
+  outline: transparent;  
 }
 
 .envioValidacion p{
